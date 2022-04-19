@@ -42,7 +42,58 @@ function getSidebar($ruta = '')
                     </div>
                 </div>
             </li>
+            
+            <li class="nav-item active">
+                <a class="nav-link" href="#" data-toggle="collapse" data-target="#collapsePages" aria-expanded="false"
+                    aria-controls="collapsePages">
+                    <i class="fas fa-fw fa-folder"></i>
+                    <span>Softwares:</span>
+                </a>
+                <div id="collapsePages" class="collapse" aria-labelledby="headingPages"
+                    data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Software:</h6>
+                        <a class="collapse-item" href="{$ruta}main/software/index.php">Desarrollos Locales</a>
+                        <a class="collapse-item" href="{$ruta}main/software/desarrollo.php">Desarrollo</a>
+                        <a class="collapse-item" href="{$ruta}main/software/sistemas.php">Sistemas Operativos</a>
+                    </div>
+                </div>
+            </li>
+<!--Esto es lo tuyo Alex para que le agregues los necesarios o me avises-->
+            <li class="nav-item active">
+                <a class="nav-link" href="#" data-toggle="collapse" data-target="#collapsePages2" aria-expanded="false"
+                    aria-controls="collapsePages2">
+                    <i class="fas fa-fw fa-folder"></i>
+                    <span>Hardware:</span>
+                </a>
+                <div id="collapsePages2" class="collapse " aria-labelledby="headingPages"
+                    data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Hardware:</h6>
+                        <a class="collapse-item" href="{$ruta}main/hardware/index.php"></a> <!--Cambiar las rutas al final si te es necesario-->
+                        <a class="collapse-item" href="{$ruta}main/hardware/.php"></a>
+                        <a class="collapse-item" href="{$ruta}main/hardware/.php"></a>
+                    </div>
+                </div>
+            </li>
 
+<!--Esto es lo tuyo chris para que le agregues los necesarios o me avises-->
+            <li class="nav-item active">
+                <a class="nav-link" href="#" data-toggle="collapse" data-target="#collapsePages3" aria-expanded="false"
+                    aria-controls="collapsePages3">
+                    <i class="fas fa-fw fa-folder"></i>
+                    <span>Electrico:</span>
+                </a>
+                <div id="collapsePages3" class="collapse " aria-labelledby="headingPages"
+                    data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Electrico:</h6>
+                        <a class="collapse-item" href="{$ruta}main/electrica/index.php"></a> <!--Cambiar las rutas al final si te es necesario-->
+                        <a class="collapse-item" href="{$ruta}main/electrica/.php"></a>
+                        <a class="collapse-item" href="{$ruta}main/electrica/.php"></a>
+                    </div>
+                </div>
+            </li>
 
             <!-- Divider -->
             <hr class="sidebar-divider">
@@ -61,7 +112,7 @@ function getSidebar($ruta = '')
 
             <!-- Nav Item - Tables -->
             <li class="nav-item">
-                <a class="nav-link" href="{$ruta}tables.html">
+                <a class="nav-link" href="#">
                     <i class="fas fa-fw fa-table"></i>
                     <span>Tables</span></a>
             </li>
@@ -95,9 +146,7 @@ function getNavbar($ruta = '')
                         <li class="nav-item dropdown no-arrow">
                             <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Douglas McGee</span>
-                                <img class="img-profile rounded-circle"
-                                    src="img/undraw_profile.svg">
+                                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Administrador</span>
                             </a>
                             <!-- Dropdown - User Information -->
                             <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
