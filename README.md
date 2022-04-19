@@ -1,9 +1,8 @@
 # Proyecto de Administracion enero - mayo 2022
 
 ##Materias
+
 Administracion Tecnologicas
-
-
 Este proyecto es realizado para la materia de Administracion Tecnologicas
 
 
