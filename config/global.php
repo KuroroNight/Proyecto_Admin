@@ -1,5 +1,7 @@
 <?php
 
+define('PAGE_TITLE', 'Administracion');
+
 function getSidebar($ruta = '')
 {
     $html = '';
@@ -14,7 +16,7 @@ function getSidebar($ruta = '')
 
             <!-- Nav Item - Dashboard -->
             <li class="nav-item">
-                <a class="nav-link" href="{$ruta}index.html">
+                <a class="nav-link" href="{$ruta}main/index.php">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Dashboard</span></a>
             </li>
