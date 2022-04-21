@@ -15,6 +15,7 @@ define('RUTA_INCLUDE', '../../'); //ajustar a necesidad
     <meta name="description" content="">
     <meta name="author" content="">
 
+    <title><?php echo PAGE_TITLE ?></title>
 
 
     <?php getTopIncludes(RUTA_INCLUDE ) ?>
@@ -46,14 +47,14 @@ define('RUTA_INCLUDE', '../../'); //ajustar a necesidad
                         <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                             <thead>
                             <tr>
-                                <th>Software</th>
+                                <th>Hardware</th>
                                 <th>Start date</th>
                                 <th>Finish date</th>
                             </tr>
                             </thead>
                             <tfoot>
                             <tr>
-                                <th>Software</th>
+                                <th>Hardware</th>
                                 <th>Start date</th>
                                 <th>Finish date</th>
                             </tr>
@@ -63,26 +64,31 @@ define('RUTA_INCLUDE', '../../'); //ajustar a necesidad
                                 <td></td>
                                 <td></td>
                                 <td></td>
+                                <td><a href="#" class="btn btn-link btn-sm">Editar</a> <a href="#" class="btn btn-link btn-sm">Eliminar</a></td>
                             </tr>
                             <tr>
                                 <td></td>
                                 <td></td>
                                 <td></td>
+                                <td><a href="#" class="btn btn-link btn-sm">Editar</a> <a href="#" class="btn btn-link btn-sm">Eliminar</a></td>
                             </tr>
                             <tr>
                                 <td></td>
                                 <td></td>
                                 <td></td>
+                                <td><a href="#" class="btn btn-link btn-sm">Editar</a> <a href="#" class="btn btn-link btn-sm">Eliminar</a></td>
                             </tr>
                             <tr>
                                 <td></td>
                                 <td></td>
                                 <td></td>
+                                <td><a href="#" class="btn btn-link btn-sm">Editar</a> <a href="#" class="btn btn-link btn-sm">Eliminar</a></td>
                             </tr>
                             <tr>
                                 <td></td>
                                 <td></td>
                                 <td></td>
+                                <td><a href="#" class="btn btn-link btn-sm">Editar</a> <a href="#" class="btn btn-link btn-sm">Eliminar</a></td>
                             </tr>
                             </tbody>
                         </table>

@@ -1,8 +1,8 @@
 <?php
-require_once '../../config/global.php';
+require_once '../../../config/global.php';
 
 
-define('RUTA_INCLUDE', '../../'); //ajustar a necesidad
+define('RUTA_INCLUDE', '../../../'); //ajustar a necesidad
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -34,7 +34,7 @@ define('RUTA_INCLUDE', '../../'); //ajustar a necesidad
 
             <!-- Page Content -->
             <h1 class="h3 mb-2 text-gray-800">Software</h1>
-            <a class="btn btn-primary" href="nuevosoftware.php">Crear uno nuevo</a>
+            <a class="btn btn-primary" href="agregarlaptop.php">Crear uno nuevo</a>
 
             <!-- DataTales Example -->
             <div class="card shadow mb-4">
@@ -46,47 +46,47 @@ define('RUTA_INCLUDE', '../../'); //ajustar a necesidad
                         <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                             <thead>
                             <tr>
-                                <th>Nombre</th>
+                                <th>Software</th>
                                 <th>Start date</th>
                                 <th>Finish date</th>
                             </tr>
                             </thead>
                             <tfoot>
                             <tr>
-                                <th>Nombre</th>
+                                <th>Software</th>
                                 <th>Start date</th>
                                 <th>Finish date</th>
                             </tr>
                             </tfoot>
                             <tbody>
                             <tr>
-                                <td></td>
-                                <td></td>
-                                <td></td>
+                                <td>Windows</td>
+                                <td>5/17/2021</td>
+                                <td>5/17/2022</td>
+                                <td><a href="#" class="btn btn-link btn-sm">Editar</a> <a href="#" class="btn btn-link btn-sm">Eliminar</a></td>
+                            </tr>
+                            <tr>
+                                <td>Oracle</td>
+                                <td>4/18/2021</td>
+                                <td>4/18/2022</td>
                                 <td><a href="#" class="btn btn-link btn-sm">Editar</a> <a href="#" class="btn btn-link btn-sm">Eliminar</a></td>
                             </tr>
                             <tr>
                                 <td></td>
-                                <td></td>
-                                <td></td>
+                                <td>4/18/2021</td>
+                                <td>4/18/2022</td>
                                 <td><a href="#" class="btn btn-link btn-sm">Editar</a> <a href="#" class="btn btn-link btn-sm">Eliminar</a></td>
                             </tr>
                             <tr>
                                 <td></td>
-                                <td></td>
-                                <td></td>
+                                <td>4/18/2021</td>
+                                <td>4/18/2022</td>
                                 <td><a href="#" class="btn btn-link btn-sm">Editar</a> <a href="#" class="btn btn-link btn-sm">Eliminar</a></td>
                             </tr>
                             <tr>
                                 <td></td>
-                                <td></td>
-                                <td></td>
-                                <td><a href="#" class="btn btn-link btn-sm">Editar</a> <a href="#" class="btn btn-link btn-sm">Eliminar</a></td>
-                            </tr>
-                            <tr>
-                                <td></td>
-                                <td></td>
-                                <td></td>
+                                <td>4/18/2021</td>
+                                <td>4/18/2022</td>
                                 <td><a href="#" class="btn btn-link btn-sm">Editar</a> <a href="#" class="btn btn-link btn-sm">Eliminar</a></td>
                             </tr>
                             </tbody>

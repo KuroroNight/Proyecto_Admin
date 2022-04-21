@@ -17,6 +17,7 @@ define('RUTA_INCLUDE', '../../'); //ajustar a necesidad
 
     <title><?php echo PAGE_TITLE ?></title>
 
+
     <?php getTopIncludes(RUTA_INCLUDE ) ?>
 </head>
 
@@ -46,47 +47,40 @@ define('RUTA_INCLUDE', '../../'); //ajustar a necesidad
                         <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                             <thead>
                             <tr>
-                                <th>Nombre</th>
+                                <th>Software</th>
                                 <th>Start date</th>
-                                <th>Finish date</th>
                             </tr>
                             </thead>
                             <tfoot>
                             <tr>
-                                <th>Nombre</th>
+                                <th>Software</th>
                                 <th>Start date</th>
-                                <th>Finish date</th>
                             </tr>
                             </tfoot>
                             <tbody>
                             <tr>
-                                <td></td>
-                                <td></td>
-                                <td></td>
+                                <td>Windows</td>
+                                <td>5/17/2021</td>
+                                <td><a href="#" class="btn btn-link btn-sm">Editar</a> <a href="#" class="btn btn-link btn-sm">Eliminar</a></td>
+                            </tr>
+                            <tr>
+                                <td>Linux</td>
+                                <td>4/18/2021</td>
                                 <td><a href="#" class="btn btn-link btn-sm">Editar</a> <a href="#" class="btn btn-link btn-sm">Eliminar</a></td>
                             </tr>
                             <tr>
                                 <td></td>
-                                <td></td>
-                                <td></td>
+                                <td>4/18/2021</td>
                                 <td><a href="#" class="btn btn-link btn-sm">Editar</a> <a href="#" class="btn btn-link btn-sm">Eliminar</a></td>
                             </tr>
                             <tr>
                                 <td></td>
-                                <td></td>
-                                <td></td>
+                                <td>4/18/2021</td>
                                 <td><a href="#" class="btn btn-link btn-sm">Editar</a> <a href="#" class="btn btn-link btn-sm">Eliminar</a></td>
                             </tr>
                             <tr>
                                 <td></td>
-                                <td></td>
-                                <td></td>
-                                <td><a href="#" class="btn btn-link btn-sm">Editar</a> <a href="#" class="btn btn-link btn-sm">Eliminar</a></td>
-                            </tr>
-                            <tr>
-                                <td></td>
-                                <td></td>
-                                <td></td>
+                                <td>4/18/2021</td>
                                 <td><a href="#" class="btn btn-link btn-sm">Editar</a> <a href="#" class="btn btn-link btn-sm">Eliminar</a></td>
                             </tr>
                             </tbody>
