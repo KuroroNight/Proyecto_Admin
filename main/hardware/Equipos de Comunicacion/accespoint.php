@@ -43,7 +43,7 @@ define('RUTA_INCLUDE', '../../../'); //ajustar a necesidad
 
             <div class="row my-3">
                 <div class="col text-right">
-                    <a class="btn btn-primary" href="agregarpc.php">Crear uno nuevo</a>
+                    <a class="btn btn-primary" href="agregaraccess.php">Crear uno nuevo</a>
                 </div>
             </div>
             <!-- DataTales Example -->

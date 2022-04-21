@@ -30,7 +30,7 @@ function getSidebar($ruta = '')
             </div>
 
             <!-- Nav Item - Pages Collapse Menu -->
-           <!--- <li class="nav-item">
+            <li class="nav-item">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
                     aria-expanded="true" aria-controls="collapseTwo">
                     <i class="fas fa-fw fa-cog"></i>
@@ -38,20 +38,36 @@ function getSidebar($ruta = '')
                 </a>
                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">Custom Components:</h6>
-                        <a class="collapse-item" href="{$ruta}buttons.html">Buttons</a>
-                        <a class="collapse-item" href="{$ruta}cards.html">Cards</a>
+                        <a class="collapse-item" href="{$ruta}hardware/index.php">Tablas de pcs con sus datos</a>
                     </div>
                 </div>
-            </li>-->
+            </li>
             
+            <!---Este pedo es para las paginas Index de Hardware y Electrica, si es que se necesita mostrar toda la informacion -->
+            
+            <li class="nav-item">
+                    <a class="nav-link" href="{$ruta}main/electrica/index.php">
+                    <i class="fas fa-fw fa-power-off"></i>
+                    <span>Tabla de Informacion</span></a>
+            </li>
+
+            <li class="nav-item">
+                    <a class="nav-link" href="{$ruta}main/hardware/index.php">
+                    <i class="fas fa-fw fa-tablet"></i>
+                    <span>Tabla de dispositivos</span></a>
+            </li>
+
+   
+            
+         <!---Esto es lo de las carpetas para que se vea ordenada la Informacion -->
+           
             <li class="nav-item ">
                 <a class="nav-link" href="#" data-toggle="collapse" data-target="#collapsePages" aria-expanded="true"
                     aria-controls="collapsePages">
                     <i class="fas fa-fw fa-folder"></i>
-                    <span>Informacion</span>
+                    <span>Software</span>
                 </a>
-                <div id="collapsePages" class="collapse show" aria-labelledby="headingPages"
+                <div id="collapsePages" class="collapse" aria-labelledby="headingPages"
                     data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Software:</h6>
@@ -59,8 +75,22 @@ function getSidebar($ruta = '')
                         <a class="collapse-item" href="{$ruta}main/software/desarrolloC.php">Desarrollo</a>
                         <a class="collapse-item" href="{$ruta}main/software/sistemas.php">Sistemas Operativos</a>
                         <a class="collapse-item" href="{$ruta}main/software/extintor.php">Extintores</a>                        
-                        <div class="collapse-divider"></div>
-                        <h6 class="collapse-header">Hardware:</h6>
+                        
+                    </div>
+                </div>
+            </li>
+            
+            
+            <!--Esto es lo tuyo Alex para que le agregues los necesarios o me avises-->
+            <li class="nav-item ">
+                <a class="nav-link" href="#" data-toggle="collapse" data-target="#collapsePages2" aria-expanded="true"
+                    aria-controls="collapsePages">
+                    <i class="fas fa-fw fa-folder"></i>
+                    <span>Hardware</span>
+                </a>
+                <div id="collapsePages2" class="collapse " aria-labelledby="headingPages"
+                    data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Puesto de Servicio:</h6>
                         <a class="collapse-item" href="{$ruta}main/hardware/Puesto de Servicio/pc.php">PC's</a> <!--Cambiar las rutas al final si te es necesario-->
                         <a class="collapse-item" href="{$ruta}main/hardware/Puesto de Servicio/laptops.php">Laptops</a>
@@ -74,11 +104,35 @@ function getSidebar($ruta = '')
                         <a class="collapse-item" href="{$ruta}main/hardware/Equipos de Comunicacion/accespoint.php">Access Point</a>
                         <a class="collapse-item" href="{$ruta}main/hardware/Equipos de Comunicacion/radiocomuni.php">Radio Conmutadores</a>
                         <a class="collapse-item" href="{$ruta}main/hardware/Equipos de Comunicacion/telefonos.php">Telefonos</a>
+                    </div>
+                </div>
+            </li>
+            
+            
+            
+            <!--Esto es lo tuyo chris para que le agregues los necesarios o me avises-->
+            <li class="nav-item ">
+                <a class="nav-link" href="#" data-toggle="collapse" data-target="#collapsePage3" aria-expanded="true"
+                    aria-controls="collapsePages">
+                    <i class="fas fa-fw fa-folder"></i>
+                    <span>Electrico</span>
+                </a>
+                <div id="collapsePages3" class="collapse " aria-labelledby="headingPages"
+                    data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
                         <div class="collapse-divider"></div>
-                        <h6 class="collapse-header">Electrico:</h6>
-                        <a class="collapse-item" href="{$ruta}main/electrica/index.php">Red Electrica</a> <!--Cambiar las rutas al final si te es necesario-->
-                        <a class="collapse-item" href="{$ruta}main/electrica/.php">Red de datos</a>
-                        <a class="collapse-item" href="{$ruta}main/electrica/.php">Sistema de enfriamiento</a>
+                        <h6 class="collapse-header">Red de datos:</h6>
+                        <a class="collapse-item" href="{$ruta}main/electrica/Red de Datos/ipdirectory.php">Directorio de IP's</a> <!--Cambiar las rutas al final si te es necesario-->
+                        <a class="collapse-item" href="{$ruta}main/electrica/Red de Datos/nodedate.php">Node de datos</a> <!--Cambiar las rutas al final si te es necesario-->
+                        <div class="collapse-divider"></div>
+                        <h6 class="collapse-header">Red Electrica:</h6>
+                        <a class="collapse-item" href="{$ruta}main/electrica/Red Electrica/tableros.php">Tableros Electricos</a>
+                        <a class="collapse-item" href="{$ruta}main/electrica/Red Electrica/nodos.php">Nodos Electricos</a>
+                        <a class="collapse-item" href="{$ruta}main/electrica/Red Electrica/emergencyplant.php">Planta de Emergencia</a>
+                        <a class="collapse-item" href="{$ruta}main/electrica/Red Electrica/ups.php">UPS</a>
+                        <div class="collapse-divider"></div>
+                        <h6 class="collapse-header">Sistema de enfriamiento:</h6>
+                        <a class="collapse-item" href="{$ruta}main/electrica/Sistema de Enfriamiento/aircooler.php">Sistema de enfriamiento</a>
                     </div>
                 </div>
             </li>
@@ -98,6 +152,9 @@ function getSidebar($ruta = '')
                     <span>Charts</span></a>
             </li> -->
 
+            
+
+              
             <!-- Nav Item - Tables -->
             <li class="nav-item">
                 <a class="nav-link" href="{$ruta}template/tables.php">
@@ -126,7 +183,7 @@ function getNavbar($ruta = '')
     $html = <<<E0D
 <!-- Topbar -->
                 <nav class="navbar navbar-expand navbar-light bg-blue  static-top ">
-                                        <a class="navbar-brand mr-1" href="{$ruta}index.html">Administracion</a>
+                                        <a class="navbar-brand mr-1" href="{$ruta}main/Inicio.php">Administracion</a>
                     <!-- Topbar Navbar -->
                     <ul class="navbar-nav ml-auto">
 
