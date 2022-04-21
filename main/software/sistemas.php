@@ -34,8 +34,19 @@ define('RUTA_INCLUDE', '../../'); //ajustar a necesidad
         <div class="container-fluid">
 
             <!-- Page Content -->
-            <h1 class="h3 mb-2 text-gray-800">Software</h1>
-            <a class="btn btn-primary" href="nuevosoftware.php">Crear uno nuevo</a>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item">Software</li>
+                    <li class="breadcrumb-item active" aria-current="page">Sistemas Operativos</li>
+                </ol>
+            </nav>
+
+
+            <div class="row my-3">
+                <div class="col text-right">
+                    <a class="btn btn-primary" href="nuevosoftware.php">Crear uno nuevo</a>
+                </div>
+            </div>
 
             <!-- DataTales Example -->
             <div class="card shadow mb-4">

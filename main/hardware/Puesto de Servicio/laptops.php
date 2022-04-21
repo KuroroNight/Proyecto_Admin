@@ -33,60 +33,71 @@ define('RUTA_INCLUDE', '../../../'); //ajustar a necesidad
         <div class="container-fluid">
 
             <!-- Page Content -->
-            <h1 class="h3 mb-2 text-gray-800">Software</h1>
-            <a class="btn btn-primary" href="agregarlaptop.php">Crear uno nuevo</a>
+
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item">Hardware</li>
+                    <li class="breadcrumb-item active" aria-current="page">Tablets</li>
+                </ol>
+            </nav>
+
+            <div class="row my-3">
+                <div class="col text-right">
+                    <a class="btn btn-primary" href="agregarlaptop.php">Crear uno nuevo</a>
+                </div>
+            </div>
 
             <!-- DataTales Example -->
             <div class="card shadow mb-4">
                 <div class="card-header py-3">
-                    <h6 class="m-0 font-weight-bold text-primary">Tabla con los softwares</h6>
+                    <h6 class="m-0 font-weight-bold text-primary">Tabla con las tablets</h6>
                 </div>
                 <div class="card-body">
                     <div class="table-responsive">
                         <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                             <thead>
                             <tr>
-                                <th>Software</th>
+                                <th>Hardware</th>
                                 <th>Start date</th>
                                 <th>Finish date</th>
                             </tr>
                             </thead>
                             <tfoot>
                             <tr>
-                                <th>Software</th>
+                                <th>Hardware</th>
                                 <th>Start date</th>
                                 <th>Finish date</th>
                             </tr>
                             </tfoot>
                             <tbody>
                             <tr>
-                                <td>Windows</td>
-                                <td>5/17/2021</td>
-                                <td>5/17/2022</td>
-                                <td><a href="#" class="btn btn-link btn-sm">Editar</a> <a href="#" class="btn btn-link btn-sm">Eliminar</a></td>
-                            </tr>
-                            <tr>
-                                <td>Oracle</td>
-                                <td>4/18/2021</td>
-                                <td>4/18/2022</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
                                 <td><a href="#" class="btn btn-link btn-sm">Editar</a> <a href="#" class="btn btn-link btn-sm">Eliminar</a></td>
                             </tr>
                             <tr>
                                 <td></td>
-                                <td>4/18/2021</td>
-                                <td>4/18/2022</td>
+                                <td></td>
+                                <td></td>
                                 <td><a href="#" class="btn btn-link btn-sm">Editar</a> <a href="#" class="btn btn-link btn-sm">Eliminar</a></td>
                             </tr>
                             <tr>
                                 <td></td>
-                                <td>4/18/2021</td>
-                                <td>4/18/2022</td>
+                                <td></td>
+                                <td></td>
                                 <td><a href="#" class="btn btn-link btn-sm">Editar</a> <a href="#" class="btn btn-link btn-sm">Eliminar</a></td>
                             </tr>
                             <tr>
                                 <td></td>
-                                <td>4/18/2021</td>
-                                <td>4/18/2022</td>
+                                <td></td>
+                                <td></td>
+                                <td><a href="#" class="btn btn-link btn-sm">Editar</a> <a href="#" class="btn btn-link btn-sm">Eliminar</a></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
                                 <td><a href="#" class="btn btn-link btn-sm">Editar</a> <a href="#" class="btn btn-link btn-sm">Eliminar</a></td>
                             </tr>
                             </tbody>

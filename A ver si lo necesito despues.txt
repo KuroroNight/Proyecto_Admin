@@ -1,0 +1,35 @@
+<!--Esto es lo tuyo Alex para que le agregues los necesarios o me avises-->
+            <li class="nav-item ">
+                <a class="nav-link" href="#" data-toggle="collapse" data-target="#collapsePages2" aria-expanded="true"
+                    aria-controls="collapsePages">
+                    <i class="fas fa-fw fa-folder"></i>
+                    <span>Hardware</span>
+                </a>
+                <div id="collapsePages2" class="collapse " aria-labelledby="headingPages"
+                    data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Hardware:</h6>
+                        <a class="collapse-item" href="{$ruta}main/hardware/index.php"></a> <!--Cambiar las rutas al final si te es necesario-->
+                        <a class="collapse-item" href="{$ruta}main/hardware/Puesto de Servicio/laptops.php">Puestos de Servicioo</a>
+                        <a class="collapse-item" href="{$ruta}main/hardware/Equipos de Comunicacion/.php">Equipos de Comunicacion</a>
+                    </div>
+                </div>
+            </li>
+
+            <!--Esto es lo tuyo chris para que le agregues los necesarios o me avises-->
+            <li class="nav-item ">
+                <a class="nav-link" href="#" data-toggle="collapse" data-target="#collapsePages3" aria-expanded="true"
+                    aria-controls="collapsePages">
+                    <i class="fas fa-fw fa-folder"></i>
+                    <span>Electrico</span>
+                </a>
+                <div id="collapsePages3" class="collapse " aria-labelledby="headingPages"
+                    data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Electrico:</h6>
+                        <a class="collapse-item" href="{$ruta}main/electrica/index.php">Red Electrica</a> <!--Cambiar las rutas al final si te es necesario-->
+                        <a class="collapse-item" href="{$ruta}main/electrica/.php">Red de datos</a>
+                        <a class="collapse-item" href="{$ruta}main/electrica/.php">Sistema de enfriamiento</a>
+                    </div>
+                </div>
+            </li>

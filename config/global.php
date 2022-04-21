@@ -49,48 +49,32 @@ function getSidebar($ruta = '')
                 <a class="nav-link" href="#" data-toggle="collapse" data-target="#collapsePages" aria-expanded="true"
                     aria-controls="collapsePages">
                     <i class="fas fa-fw fa-folder"></i>
-                    <span>Softwares</span>
+                    <span>Informacion</span>
                 </a>
-                <div id="collapsePages" class="collapse " aria-labelledby="headingPages"
+                <div id="collapsePages" class="collapse show" aria-labelledby="headingPages"
                     data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Software:</h6>
                         <a class="collapse-item" href="{$ruta}main/software/index.php">Desarrollos Locales</a>
                         <a class="collapse-item" href="{$ruta}main/software/desarrolloC.php">Desarrollo</a>
                         <a class="collapse-item" href="{$ruta}main/software/sistemas.php">Sistemas Operativos</a>
-                        <a class="collapse-item" href="{$ruta}main/software/extintor.php">Extintores</a>
-                    </div>
-                </div>
-            </li>
-            
-            <!--Esto es lo tuyo Alex para que le agregues los necesarios o me avises-->
-            <li class="nav-item ">
-                <a class="nav-link" href="#" data-toggle="collapse" data-target="#collapsePages2" aria-expanded="true"
-                    aria-controls="collapsePages">
-                    <i class="fas fa-fw fa-folder"></i>
-                    <span>Hardware</span>
-                </a>
-                <div id="collapsePages2" class="collapse " aria-labelledby="headingPages"
-                    data-parent="#accordionSidebar">
-                    <div class="bg-white py-2 collapse-inner rounded">
+                        <a class="collapse-item" href="{$ruta}main/software/extintor.php">Extintores</a>                        
+                        <div class="collapse-divider"></div>
                         <h6 class="collapse-header">Hardware:</h6>
-                        <a class="collapse-item" href="{$ruta}main/hardware/index.php"></a> <!--Cambiar las rutas al final si te es necesario-->
-                        <a class="collapse-item" href="{$ruta}main/hardware/Puesto de Servicio/laptops.php">Puestos de Servicioo</a>
-                        <a class="collapse-item" href="{$ruta}main/hardware/Equipos de Comunicacion/.php">Equipos de Comunicacion</a>
-                    </div>
-                </div>
-            </li>
-
-            <!--Esto es lo tuyo chris para que le agregues los necesarios o me avises-->
-            <li class="nav-item ">
-                <a class="nav-link" href="#" data-toggle="collapse" data-target="#collapsePages3" aria-expanded="true"
-                    aria-controls="collapsePages">
-                    <i class="fas fa-fw fa-folder"></i>
-                    <span>Electrico</span>
-                </a>
-                <div id="collapsePages3" class="collapse " aria-labelledby="headingPages"
-                    data-parent="#accordionSidebar">
-                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Puesto de Servicio:</h6>
+                        <a class="collapse-item" href="{$ruta}main/hardware/Puesto de Servicio/pc.php">PC's</a> <!--Cambiar las rutas al final si te es necesario-->
+                        <a class="collapse-item" href="{$ruta}main/hardware/Puesto de Servicio/laptops.php">Laptops</a>
+                        <a class="collapse-item" href="{$ruta}main/hardware/Puesto de Servicio/tables o moviles.php">Tablets o Moviles</a>
+                        <a class="collapse-item" href="{$ruta}main/hardware/Puesto de Servicio/.php">Sticks</a>
+                        <div class="collapse-divider"></div>
+                        <h6 class="collapse-header">Equipos de Comunicacion:</h6>
+                        <a class="collapse-item" href="{$ruta}main/hardware/Equipos de Comunicacion/switches.php">Switches</a> <!--Cambiar las rutas al final si te es necesario-->
+                        <a class="collapse-item" href="{$ruta}main/hardware/Equipos de Comunicacion/routers.php">Routers</a>
+                        <a class="collapse-item" href="{$ruta}main/hardware/Equipos de Comunicacion/conmutadores.php">Conmutadores</a>
+                        <a class="collapse-item" href="{$ruta}main/hardware/Equipos de Comunicacion/accespoint.php">Access Point</a>
+                        <a class="collapse-item" href="{$ruta}main/hardware/Equipos de Comunicacion/radiocomuni.php">Radio Conmutadores</a>
+                        <a class="collapse-item" href="{$ruta}main/hardware/Equipos de Comunicacion/telefonos.php">Telefonos</a>
+                        <div class="collapse-divider"></div>
                         <h6 class="collapse-header">Electrico:</h6>
                         <a class="collapse-item" href="{$ruta}main/electrica/index.php">Red Electrica</a> <!--Cambiar las rutas al final si te es necesario-->
                         <a class="collapse-item" href="{$ruta}main/electrica/.php">Red de datos</a>
@@ -98,7 +82,7 @@ function getSidebar($ruta = '')
                     </div>
                 </div>
             </li>
-
+            
             <!-- Divider -->
             <hr class="sidebar-divider">
 

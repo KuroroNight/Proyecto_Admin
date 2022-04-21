@@ -37,7 +37,7 @@ define('RUTA_INCLUDE', '../../../'); //ajustar a necesidad
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item">Hardware</li>
-                    <li class="breadcrumb-item active" aria-current="page">PCs</li>
+                    <li class="breadcrumb-item active" aria-current="page"></li>
                 </ol>
             </nav>
 
@@ -49,7 +49,7 @@ define('RUTA_INCLUDE', '../../../'); //ajustar a necesidad
             <!-- DataTales Example -->
             <div class="card shadow mb-4">
                 <div class="card-header py-3">
-                    <h6 class="m-0 font-weight-bold text-primary">Tabla con las PC's</h6>
+                    <h6 class="m-0 font-weight-bold text-primary">Tabla con las </h6>
                 </div>
                 <div class="card-body">
                     <div class="table-responsive">
