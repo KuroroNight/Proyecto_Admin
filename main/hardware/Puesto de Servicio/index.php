@@ -1,8 +1,8 @@
 <?php
-require_once '../../config/global.php';
+require_once '../../../config/global.php';
 
 
-define('RUTA_INCLUDE', '../../'); //ajustar a necesidad
+define('RUTA_INCLUDE', '../../../'); //ajustar a necesidad
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -43,14 +43,14 @@ define('RUTA_INCLUDE', '../../'); //ajustar a necesidad
 
             <div class="row my-3">
                 <div class="col text-right">
-                    <a class="btn btn-primary" href=".php">Crear uno nuevo</a>
+                    <a class="btn btn-primary" href="agregarpuesto.php">Añadir uno nuevo</a>
                 </div>
             </div>
 
             <!-- DataTales Example -->
             <div class="card shadow mb-4">
                 <div class="card-header py-3">
-                    <h6 class="m-0 font-weight-bold text-primary">Tabla con los </h6>
+                    <h6 class="m-0 font-weight-bold text-primary">Tabla con los dispositivos </h6>
                 </div>
                 <div class="card-body">
                     <div class="table-responsive">
@@ -78,31 +78,9 @@ define('RUTA_INCLUDE', '../../'); //ajustar a necesidad
                                 <td></td>
                                 <td></td>
                                 <td></td>
-                                <td><a href="#" class="btn btn-link btn-sm">Editar</a> <a href="eliminarDispositvo.php" class="btn btn-link btn-sm">Eliminar</a></td>
-                            </tr>
-                            <tr>
                                 <td></td>
                                 <td></td>
-                                <td></td>
-                                <td><a href="#" class="btn btn-link btn-sm">Editar</a> <a href="#" class="btn btn-link btn-sm">Eliminar</a></td>
-                            </tr>
-                            <tr>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td><a href="#" class="btn btn-link btn-sm">Editar</a> <a href="#" class="btn btn-link btn-sm">Eliminar</a></td>
-                            </tr>
-                            <tr>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td><a href="#" class="btn btn-link btn-sm">Editar</a> <a href="#" class="btn btn-link btn-sm">Eliminar</a></td>
-                            </tr>
-                            <tr>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td><a href="#" class="btn btn-link btn-sm">Editar</a> <a href="#" class="btn btn-link btn-sm">Eliminar</a></td>
+                                <td><a href="add-device.php" class="btn btn-link btn-sm">Editar</a> <a href="eliminarDispositvo.php" class="btn btn-link btn-sm">Eliminar</a></td>
                             </tr>
                             </tbody>
                         </table>

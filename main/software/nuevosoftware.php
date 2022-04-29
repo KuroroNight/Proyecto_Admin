@@ -1,6 +1,22 @@
 <?php
 require_once '../../config/global.php';
 
+//config db
+/*
+$id_usuario = $_SESSION['id_usuario'];
+$sql = "select * from hardware where id = '$id_usuario'";
+$resultado = mysqli_query($db, $sql);
+
+
+if($resultado){
+    while ($fila = mysqli_fetch_assoc($resultado)){
+
+    }
+}
+
+*/
+
+
 define('RUTA_INCLUDE', '../../'); //ajustar a necesidad
 ?>
 <!DOCTYPE html>
@@ -40,10 +56,11 @@ define('RUTA_INCLUDE', '../../'); //ajustar a necesidad
             </nav>
 
             <!-- Page Content -->
-
+            <form action="add-device.php" method="post" enctype="multipart/form-data">
+                <!-- <input type="hidden" name="id_estado" value="<//?php echo $id_estado ?>" />-->
             <div class="row mb-5">
                 <div class="col">
-                    <button type="submit" class="btn btn-success" disabled>Añadir</button>
+                    <button type="submit" class="btn btn-success" >Añadir</button>
                 </div>
                 <div class="col text-right">
                     <a href="index.php" class="btn btn-link">Cancelar</a>
@@ -69,7 +86,7 @@ define('RUTA_INCLUDE', '../../'); //ajustar a necesidad
                            placeholder="Fechafin">
                 </div>
             </div>
-
+            </form>
         </div>
         <!-- /.container-fluid -->
 

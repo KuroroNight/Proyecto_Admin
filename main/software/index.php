@@ -43,7 +43,7 @@ define('RUTA_INCLUDE', '../../'); //ajustar a necesidad
 
             <div class="row my-3">
                 <div class="col text-right">
-                    <a class="btn btn-primary" href="nuevosoftware.php">Crear uno nuevo</a>
+                    <a class="btn btn-primary" href="nuevosoftware.php">Añadir uno nuevo</a>
                 </div>
             </div>
 
@@ -74,31 +74,13 @@ define('RUTA_INCLUDE', '../../'); //ajustar a necesidad
                                 <td>Windows</td>
                                 <td>5/17/2021</td>
                                 <td>5/17/2022</td>
-                                <td><a href="#" class="btn btn-link btn-sm">Editar</a> <a href="#" class="btn btn-link btn-sm">Eliminar</a></td>
+                                <td><a href="nuevosoftware.php" class="btn btn-link btn-sm">Editar</a> <a href="eliminarSoftware.php" class="btn btn-link btn-sm">Eliminar</a></td>
                             </tr>
                             <tr>
                                 <td>Oracle</td>
                                 <td>4/18/2021</td>
                                 <td>4/18/2022</td>
-                                <td><a href="#" class="btn btn-link btn-sm">Editar</a> <a href="#" class="btn btn-link btn-sm">Eliminar</a></td>
-                            </tr>
-                            <tr>
-                                <td></td>
-                                <td>4/18/2021</td>
-                                <td>4/18/2022</td>
-                                <td><a href="#" class="btn btn-link btn-sm">Editar</a> <a href="#" class="btn btn-link btn-sm">Eliminar</a></td>
-                            </tr>
-                            <tr>
-                                <td></td>
-                                <td>4/18/2021</td>
-                                <td>4/18/2022</td>
-                                <td><a href="#" class="btn btn-link btn-sm">Editar</a> <a href="#" class="btn btn-link btn-sm">Eliminar</a></td>
-                            </tr>
-                            <tr>
-                                <td></td>
-                                <td>4/18/2021</td>
-                                <td>4/18/2022</td>
-                                <td><a href="#" class="btn btn-link btn-sm">Editar</a> <a href="#" class="btn btn-link btn-sm">Eliminar</a></td>
+                                <td><a href="nuevosoftware.php" class="btn btn-link btn-sm">Editar</a> <a href="eliminarSoftware.php" class="btn btn-link btn-sm">Eliminar</a></td>
                             </tr>
                             </tbody>
                         </table>

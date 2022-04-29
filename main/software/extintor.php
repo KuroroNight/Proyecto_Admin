@@ -44,7 +44,7 @@ define('RUTA_INCLUDE', '../../'); //ajustar a necesidad
 
             <div class="row my-3">
                 <div class="col text-right">
-                    <a class="btn btn-primary" href="nuevosoftware.php">Crear uno nuevo</a>
+                    <a class="btn btn-primary" href=".php">Crear uno nuevo</a>
                 </div>
             </div>
             <!-- DataTales Example -->
@@ -57,16 +57,16 @@ define('RUTA_INCLUDE', '../../'); //ajustar a necesidad
                         <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                             <thead>
                             <tr>
-                                <th>Software</th>
-                                <th>Start date</th>
-                                <th>Finish date</th>
+                                <th>Extintor</th>
+                                <th>Localizacion</th>
+                                <th>Fecha Mantenimiento</th>
                             </tr>
                             </thead>
                             <tfoot>
                             <tr>
-                                <th>Software</th>
-                                <th>Start date</th>
-                                <th>Finish date</th>
+                                <th>Extintor</th>
+                                <th>Localizacion</th>
+                                <th>Fecha Mantenimiento</th>
                             </tr>
                             </tfoot>
                             <tbody>
