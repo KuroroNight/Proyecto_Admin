@@ -40,7 +40,7 @@ function getSidebar($ruta = '')
             </li>
 
             <li class="nav-item">
-                    <a class="nav-link" href="{$ruta}main/hardware/index.php">
+                    <a class="nav-link" href="{$ruta}main/hardware/Puesto de Servicio/index.php">
                     <i class="fas fa-fw fa-tablet"></i>
                     <span>Tabla de dispositivos</span></a>
             </li>
@@ -59,9 +59,7 @@ function getSidebar($ruta = '')
                     data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Software:</h6>
-                        <a class="collapse-item" href="{$ruta}main/software/index.php">Desarrollos Locales</a>
-                        <a class="collapse-item" href="{$ruta}main/software/desarrolloC.php">Desarrollo</a>
-                        <a class="collapse-item" href="{$ruta}main/software/sistemas.php">Sistemas Operativos</a>
+                        <a class="collapse-item" href="{$ruta}main/software/index.php">Tabla con los Softwares</a>
                         <a class="collapse-item" href="{$ruta}main/software/extintor.php">Extintores</a>                        
                         
                     </div>
@@ -81,11 +79,6 @@ function getSidebar($ruta = '')
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Equipos de Comunicacion:</h6>
                         <a class="collapse-item" href="{$ruta}main/hardware/Equipos de Comunicacion/index.php">Equipos de comunicacion</a> <!--Cambiar las rutas al final si te es necesario-->
-                        <a class="collapse-item" href="{$ruta}main/hardware/Equipos de Comunicacion/routers.php">Routers</a>
-                        <a class="collapse-item" href="{$ruta}main/hardware/Equipos de Comunicacion/conmutadores.php">Conmutadores</a>
-                        <a class="collapse-item" href="{$ruta}main/hardware/Equipos de Comunicacion/accespoint.php">Access Point</a>
-                        <a class="collapse-item" href="{$ruta}main/hardware/Equipos de Comunicacion/radiocomuni.php">Radio Conmutadores</a>
-                        <a class="collapse-item" href="{$ruta}main/hardware/Equipos de Comunicacion/telefonos.php">Telefonos</a>
                     </div>
                 </div>
             </li>
@@ -155,7 +148,7 @@ function getNavbar($ruta = '')
                             <!-- Dropdown - User Information -->
                             <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
                                 aria-labelledby="userDropdown">
-                                <a class="dropdown-item" href="#">
+                                <a class="dropdown-item" href="{$ruta}main/perfil/index.php">
                                     <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
                                     Profile
                                 </a>

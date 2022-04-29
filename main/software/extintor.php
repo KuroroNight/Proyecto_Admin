@@ -44,7 +44,7 @@ define('RUTA_INCLUDE', '../../'); //ajustar a necesidad
 
             <div class="row my-3">
                 <div class="col text-right">
-                    <a class="btn btn-primary" href=".php">Crear uno nuevo</a>
+                    <a class="btn btn-primary" href="añadirextintor.php">Crear uno nuevo</a>
                 </div>
             </div>
             <!-- DataTales Example -->
@@ -74,7 +74,7 @@ define('RUTA_INCLUDE', '../../'); //ajustar a necesidad
                                 <td>Windows</td>
                                 <td>5/17/2021</td>
                                 <td>5/17/2022</td>
-                                <td><a href="#" class="btn btn-link btn-sm">Editar</a> <a href="#" class="btn btn-link btn-sm">Eliminar</a></td>
+                                <td><a href="añadirextintor.php" class="btn btn-link btn-sm">Editar</a> <a href="delete-Extinguisher.php" class="btn btn-link btn-sm">Eliminar</a></td>
                             </tr>
                             <tr>
                                 <td>Oracle</td>

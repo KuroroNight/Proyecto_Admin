@@ -51,41 +51,40 @@ define('RUTA_INCLUDE', '../../'); //ajustar a necesidad
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item">Software</li>
-                    <li class="breadcrumb-item active" aria-current="page">Añadir software</li>
+                    <li class="breadcrumb-item active" aria-current="page">Añadir extintor</li>
                 </ol>
             </nav>
 
             <!-- Page Content -->
-            <form action="add-software.php" method="post" enctype="multipart/form-data">
+            <form action="add-Extinguisher.php" method="post" enctype="multipart/form-data">
                 <!-- <input type="hidden" name="id_estado" value="<//?php echo $id_estado ?>" />-->
-            <div class="row mb-5">
-                <div class="col">
-                    <button type="submit" class="btn btn-success" >Añadir</button>
-                </div>
-                <div class="col text-right">
-                    <a href="index.php" class="btn btn-link">Cancelar</a>
-                </div>
-            </div>
-
-
-            <div class="form-row">
-                <div class="form-group col-md-6">
-                    <label>Software</label>
-                    <input type="text" name="text" class="form-control"
-                           placeholder="Nombre Software">
-                </div>
-                <div class="form-group col-md-6">
-                    <label>Fecha de Inicio de uso</label>
-                    <input type="date" name="date" class="form-control"
-                           placeholder="Fecha">
+                <div class="row mb-5">
+                    <div class="col">
+                        <button type="submit" class="btn btn-success" >Añadir</button>
+                    </div>
+                    <div class="col text-right">
+                        <a href="index.php" class="btn btn-link">Cancelar</a>
+                    </div>
                 </div>
 
-                <div class="form-group col-md-6">
-                    <label>Fecha de fin de uso</label>
-                    <input type="date" name="date" class="form-control"
-                           placeholder="Fechafin">
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label></label>
+                        <input type="text" name="text" class="form-control"
+                               placeholder="Nombre Software">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label>Fecha de Inicio de uso</label>
+                        <input type="date" name="" class="form-control"
+                               placeholder="">
+                    </div>
+
+                    <div class="form-group col-md-6">
+                        <label></label>
+                        <input type="date" name="" class="form-control"
+                               placeholder="">
+                    </div>
                 </div>
-            </div>
             </form>
         </div>
         <!-- /.container-fluid -->
