@@ -74,7 +74,7 @@ define('RUTA_INCLUDE', '../../'); //ajustar a necesidad
                                 <td></td>
                                 <td></td>
                                 <td></td>
-                                <td><a href="#" class="btn btn-link btn-sm">Editar</a> <a href="#" class="btn btn-link btn-sm">Eliminar</a></td>
+                                <td><a href="#" class="btn btn-link btn-sm">Editar</a> <a href="eliminarDispositvo.php" class="btn btn-link btn-sm">Eliminar</a></td>
                             </tr>
                             <tr>
                                 <td></td>

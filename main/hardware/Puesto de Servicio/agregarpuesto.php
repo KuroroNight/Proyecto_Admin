@@ -1,5 +1,19 @@
 <?php
 require_once '../../../config/global.php';
+//config db
+/*
+$id_usuario = $_SESSION['id_usuario'];
+$sql = "select * from hardware where id = '$id_usuario'";
+$resultado = mysqli_query($db, $sql);
+
+
+if($resultado){
+    while ($fila = mysqli_fetch_assoc($resultado)){
+
+    }
+}
+
+*/
 
 define('RUTA_INCLUDE', '../../../'); //ajustar a necesidad
 ?>
@@ -35,15 +49,16 @@ define('RUTA_INCLUDE', '../../../'); //ajustar a necesidad
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item">Software</li>
-                    <li class="breadcrumb-item active" aria-current="page">Añadir software</li>
+                    <li class="breadcrumb-item active" aria-current="page">Añadir Dispositivo</li>
                 </ol>
             </nav>
 
             <!-- Page Content -->
-
+            <form action="add-device.php" method="post" enctype="multipart/form-data">
+            <!-- <input type="hidden" name="id_estado" value="<//?php echo $id_estado ?>" />-->
             <div class="row mb-5">
                 <div class="col">
-                    <button type="submit" class="btn btn-success" disabled>Añadir</button>
+                    <button type="submit" class="btn btn-success" >Añadir</button>
                 </div>
                 <div class="col text-right">
                     <a href="index.php" class="btn btn-link">Cancelar</a>
@@ -65,30 +80,30 @@ define('RUTA_INCLUDE', '../../../'); //ajustar a necesidad
                 </div>
 
                 <div class="form-group col-md-6">
-                    <label></label>
-                    <input type="text" name="" class="form-control"
-                           placeholder="">
+                    <label>Modelo</label>
+                    <input type="text" name="modelo" class="form-control"
+                           placeholder="Modelo">
                 </div>
 
                 <div class="form-group col-md-6">
-                    <label></label>
-                    <input type="text" name="" class="form-control"
-                           placeholder="">
+                    <label>Placeholder</label>
+                    <input type="text" name="placeholder" class="form-control"
+                           placeholder="Placeholder">
                 </div>
 
                 <div class="form-group col-md-6">
                     <label>MAC</label>
-                    <input type="text" name="date" class="form-control"
-                           placeholder="Fecha">
+                    <input type="text" name="mac" class="form-control"
+                           placeholder="MAC (Opcional)">
                 </div>
 
                 <div class="form-group col-md-6">
                     <label>Localizacion</label>
-                    <input type="text" name="date" class="form-control"
-                           placeholder="Fechafin">
+                    <input type="text" name="local" class="form-control"
+                           placeholder="Localizacion">
                 </div>
             </div>
-
+            </form>
         </div>
         <!-- /.container-fluid -->
 

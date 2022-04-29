@@ -37,20 +37,21 @@ define('RUTA_INCLUDE', '../../'); //ajustar a necesidad
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item">Software</li>
-                    <li class="breadcrumb-item active" aria-current="page">Desarrollo Comerciales</li>
+                    <li class="breadcrumb-item active" aria-current="page">Sistemas Operativos</li>
                 </ol>
             </nav>
 
+
             <div class="row my-3">
                 <div class="col text-right">
-                    <a class="btn btn-primary" href="nuevosoftware.php">Crear uno nuevo</a>
+                    <a class="btn btn-primary" href="../main/software/nuevosoftware.php">Crear uno nuevo</a>
                 </div>
             </div>
 
             <!-- DataTales Example -->
             <div class="card shadow mb-4">
                 <div class="card-header py-3">
-                    <h6 class="m-0 font-weight-bold text-primary">Tabla con los softwares de desarrollo comerciales </h6>
+                    <h6 class="m-0 font-weight-bold text-primary">Tabla con los softwares</h6>
                 </div>
                 <div class="card-body">
                     <div class="table-responsive">
@@ -59,45 +60,38 @@ define('RUTA_INCLUDE', '../../'); //ajustar a necesidad
                             <tr>
                                 <th>Software</th>
                                 <th>Start date</th>
-                                <th>Finish date</th>
                             </tr>
                             </thead>
                             <tfoot>
                             <tr>
                                 <th>Software</th>
                                 <th>Start date</th>
-                                <th>Finish date</th>
                             </tr>
                             </tfoot>
                             <tbody>
                             <tr>
                                 <td>Windows</td>
                                 <td>5/17/2021</td>
-                                <td>5/17/2022</td>
                                 <td><a href="#" class="btn btn-link btn-sm">Editar</a> <a href="#" class="btn btn-link btn-sm">Eliminar</a></td>
                             </tr>
                             <tr>
-                                <td>Oracle</td>
+                                <td>Linux</td>
                                 <td>4/18/2021</td>
-                                <td>4/18/2022</td>
-                                <td><a href="#" class="btn btn-link btn-sm">Editar</a> <a href="#" class="btn btn-link btn-sm">Eliminar</a></td>
-                            </tr>
-                            <tr>
-                                <td></td>
-                                <td>4/18/2021</td>
-                                <td>4/18/2022</td>
                                 <td><a href="#" class="btn btn-link btn-sm">Editar</a> <a href="#" class="btn btn-link btn-sm">Eliminar</a></td>
                             </tr>
                             <tr>
                                 <td></td>
                                 <td>4/18/2021</td>
-                                <td>4/18/2022</td>
                                 <td><a href="#" class="btn btn-link btn-sm">Editar</a> <a href="#" class="btn btn-link btn-sm">Eliminar</a></td>
                             </tr>
                             <tr>
                                 <td></td>
                                 <td>4/18/2021</td>
-                                <td>4/18/2022</td>
+                                <td><a href="#" class="btn btn-link btn-sm">Editar</a> <a href="#" class="btn btn-link btn-sm">Eliminar</a></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>4/18/2021</td>
                                 <td><a href="#" class="btn btn-link btn-sm">Editar</a> <a href="#" class="btn btn-link btn-sm">Eliminar</a></td>
                             </tr>
                             </tbody>

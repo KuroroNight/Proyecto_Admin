@@ -1,8 +1,8 @@
 <?php
-require_once '../../../config/global.php';
+require_once '../../config/global.php';
 
 
-define('RUTA_INCLUDE', '../../../'); //ajustar a necesidad
+define('RUTA_INCLUDE', '../../'); //ajustar a necesidad
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -37,41 +37,40 @@ define('RUTA_INCLUDE', '../../../'); //ajustar a necesidad
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item">Hardware</li>
-                    <li class="breadcrumb-item active" aria-current="page">PCs</li>
+                    <li class="breadcrumb-item active" aria-current="page"> </li>
                 </ol>
             </nav>
 
             <div class="row my-3">
                 <div class="col text-right">
-                    <a class="btn btn-primary" href="agregarpuesto.php">Crear uno nuevo</a>
+                    <a class="btn btn-primary" href=".php">Crear uno nuevo</a>
                 </div>
             </div>
+
             <!-- DataTales Example -->
             <div class="card shadow mb-4">
                 <div class="card-header py-3">
-                    <h6 class="m-0 font-weight-bold text-primary">Tabla con las PC's</h6>
+                    <h6 class="m-0 font-weight-bold text-primary">Tabla con los </h6>
                 </div>
                 <div class="card-body">
                     <div class="table-responsive">
                         <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                             <thead>
                             <tr>
-                                <th>Hardware</th>
                                 <th>Marca</th>
                                 <th>Modelo</th>
-                                <th>Numero de serie</th>
-                                <th>Persona a cargo</th>
-                                <th>MAC Address</th>
+                                <th>Responsable</th>
+                                <th>MAC</th>
+                                <th>Localizacion</th>
                             </tr>
                             </thead>
                             <tfoot>
                             <tr>
-                                <th>Hardware</th>
                                 <th>Marca</th>
                                 <th>Modelo</th>
-                                <th>Numero de serie</th>
-                                <th>Persona a cargo</th>
-                                <th>MAC Address</th>
+                                <th>Responsable</th>
+                                <th>MAC</th>
+                                <th>Localizacion</th>
                             </tr>
                             </tfoot>
                             <tbody>
@@ -79,6 +78,9 @@ define('RUTA_INCLUDE', '../../../'); //ajustar a necesidad
                                 <td></td>
                                 <td></td>
                                 <td></td>
+                                <td><a href="#" class="btn btn-link btn-sm">Editar</a> <a href="eliminarDispositvo.php" class="btn btn-link btn-sm">Eliminar</a></td>
+                            </tr>
+                            <tr>
                                 <td></td>
                                 <td></td>
                                 <td></td>
@@ -88,33 +90,15 @@ define('RUTA_INCLUDE', '../../../'); //ajustar a necesidad
                                 <td></td>
                                 <td></td>
                                 <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
                                 <td><a href="#" class="btn btn-link btn-sm">Editar</a> <a href="#" class="btn btn-link btn-sm">Eliminar</a></td>
                             </tr>
                             <tr>
                                 <td></td>
                                 <td></td>
                                 <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
                                 <td><a href="#" class="btn btn-link btn-sm">Editar</a> <a href="#" class="btn btn-link btn-sm">Eliminar</a></td>
                             </tr>
                             <tr>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td><a href="#" class="btn btn-link btn-sm">Editar</a> <a href="#" class="btn btn-link btn-sm">Eliminar</a></td>
-                            </tr>
-                            <tr>
-                                <td></td>
-                                <td></td>
-                                <td></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
