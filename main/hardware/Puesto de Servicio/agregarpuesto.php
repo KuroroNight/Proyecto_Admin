@@ -53,31 +53,38 @@ define('RUTA_INCLUDE', '../../../'); //ajustar a necesidad
 
             <div class="form-row">
                 <div class="form-group col-md-6">
-                    <label>Nombre de laptop</label>
+                    <label>Nombre</label>
                     <input type="text" name="text" class="form-control"
-                           placeholder="Nombre laptop">
-                </div>
-                <div class="form-group col-md-6">
-                    <label>MAC</label>
-                    <input type="text" name="MAC" class="form-control"
-                           placeholder="Fecha">
+                           placeholder="Nombre">
                 </div>
 
                 <div class="form-group col-md-6">
-                    <label>Localizacion</label>
-                    <input type="text" name="Loc" class="form-control"
-                           placeholder="Localizacion">
-                </div>
-
-                <div class="form-group col-md-6">
-                    <label>Fecha de registro</label>
-                    <input type="date" name="Registro" class="form-control"
-                           placeholder="FEcha de registro">
+                    <label>Marca</label>
+                    <input type="text" name="marca" class="form-control"
+                           placeholder="Marca">
                 </div>
 
                 <div class="form-group col-md-6">
                     <label></label>
                     <input type="text" name="" class="form-control"
+                           placeholder="">
+                </div>
+
+                <div class="form-group col-md-6">
+                    <label></label>
+                    <input type="text" name="" class="form-control"
+                           placeholder="">
+                </div>
+
+                <div class="form-group col-md-6">
+                    <label>MAC</label>
+                    <input type="text" name="date" class="form-control"
+                           placeholder="Fecha">
+                </div>
+
+                <div class="form-group col-md-6">
+                    <label>Localizacion</label>
+                    <input type="text" name="date" class="form-control"
                            placeholder="Fechafin">
                 </div>
             </div>

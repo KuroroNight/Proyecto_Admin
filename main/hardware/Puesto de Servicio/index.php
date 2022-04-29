@@ -37,7 +37,7 @@ define('RUTA_INCLUDE', '../../../'); //ajustar a necesidad
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item">Hardware</li>
-                    <li class="breadcrumb-item active" aria-current="page">Tabletas o Moviles</li>
+                    <li class="breadcrumb-item active" aria-current="page">PCs</li>
                 </ol>
             </nav>
 
@@ -49,7 +49,7 @@ define('RUTA_INCLUDE', '../../../'); //ajustar a necesidad
             <!-- DataTales Example -->
             <div class="card shadow mb-4">
                 <div class="card-header py-3">
-                    <h6 class="m-0 font-weight-bold text-primary">Tabla con las tabletas o moviles</h6>
+                    <h6 class="m-0 font-weight-bold text-primary">Tabla con las PC's</h6>
                 </div>
                 <div class="card-body">
                     <div class="table-responsive">
@@ -57,15 +57,21 @@ define('RUTA_INCLUDE', '../../../'); //ajustar a necesidad
                             <thead>
                             <tr>
                                 <th>Hardware</th>
-                                <th>Start date</th>
-                                <th>Finish date</th>
+                                <th>Marca</th>
+                                <th>Modelo</th>
+                                <th>Numero de serie</th>
+                                <th>Persona a cargo</th>
+                                <th>MAC Address</th>
                             </tr>
                             </thead>
                             <tfoot>
                             <tr>
                                 <th>Hardware</th>
-                                <th>Start date</th>
-                                <th>Finish date</th>
+                                <th>Marca</th>
+                                <th>Modelo</th>
+                                <th>Numero de serie</th>
+                                <th>Persona a cargo</th>
+                                <th>MAC Address</th>
                             </tr>
                             </tfoot>
                             <tbody>
@@ -73,9 +79,6 @@ define('RUTA_INCLUDE', '../../../'); //ajustar a necesidad
                                 <td></td>
                                 <td></td>
                                 <td></td>
-                                <td><a href="#" class="btn btn-link btn-sm">Editar</a> <a href="#" class="btn btn-link btn-sm">Eliminar</a></td>
-                            </tr>
-                            <tr>
                                 <td></td>
                                 <td></td>
                                 <td></td>
@@ -85,15 +88,33 @@ define('RUTA_INCLUDE', '../../../'); //ajustar a necesidad
                                 <td></td>
                                 <td></td>
                                 <td></td>
-                                <td><a href="#" class="btn btn-link btn-sm">Editar</a> <a href="#" class="btn btn-link btn-sm">Eliminar</a></td>
-                            </tr>
-                            <tr>
                                 <td></td>
                                 <td></td>
                                 <td></td>
                                 <td><a href="#" class="btn btn-link btn-sm">Editar</a> <a href="#" class="btn btn-link btn-sm">Eliminar</a></td>
                             </tr>
                             <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td><a href="#" class="btn btn-link btn-sm">Editar</a> <a href="#" class="btn btn-link btn-sm">Eliminar</a></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td><a href="#" class="btn btn-link btn-sm">Editar</a> <a href="#" class="btn btn-link btn-sm">Eliminar</a></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>

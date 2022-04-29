@@ -6,6 +6,10 @@ define('RUTA_INCLUDE', '../'); //ajustar a necesidad
 ?>
 <!DOCTYPE html>
 <html lang="es">
+
+
+<title><?php echo PAGE_TITLE ?></title>
+
 <!-- Custom fonts for this template-->
 <link href="../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
 
@@ -20,7 +24,7 @@ define('RUTA_INCLUDE', '../'); //ajustar a necesidad
             <div class="card-body p-0">
 
 
-                <div class=" row">
+                <div class=" ow">
                     <div class="col-lg-6">
                         <div class="p-5">
                             <div class="text-center">
@@ -29,7 +33,7 @@ define('RUTA_INCLUDE', '../'); //ajustar a necesidad
                             <form action="login.php" method="POST">
                                 <div class="form-group">
                                     <input type="text" class="form-control form-control-user"
-                                           id="user"  placeholder="Ingresar Usuario...">
+                                           id="user"  placeholder="Ingresar Usuario">
                                 </div>
                                 <div class="form-group">
                                     <input type="password" class="form-control form-control-user"

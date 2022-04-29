@@ -29,19 +29,7 @@ function getSidebar($ruta = '')
                 Interface
             </div>
 
-            <!-- Nav Item - Pages Collapse Menu -->
-            <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
-                    aria-expanded="true" aria-controls="collapseTwo">
-                    <i class="fas fa-fw fa-cog"></i>
-                    <span>Components</span>
-                </a>
-                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
-                    <div class="bg-white py-2 collapse-inner rounded">
-                        <a class="collapse-item" href="{$ruta}hardware/index.php">Tablas de pcs con sus datos</a>
-                    </div>
-                </div>
-            </li>
+           
             
             <!---Este pedo es para las paginas Index de Hardware y Electrica, si es que se necesita mostrar toda la informacion -->
             
@@ -91,14 +79,8 @@ function getSidebar($ruta = '')
                 <div id="collapsePages2" class="collapse " aria-labelledby="headingPages"
                     data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">Puesto de Servicio:</h6>
-                        <a class="collapse-item" href="{$ruta}main/hardware/Puesto de Servicio/pc.php">PC's</a> <!--Cambiar las rutas al final si te es necesario-->
-                        <a class="collapse-item" href="{$ruta}main/hardware/Puesto de Servicio/laptops.php">Laptops</a>
-                        <a class="collapse-item" href="{$ruta}main/hardware/Puesto de Servicio/tables o moviles.php">Tablets o Moviles</a>
-                        <a class="collapse-item" href="{$ruta}main/hardware/Puesto de Servicio/.php">Sticks</a>
-                        <div class="collapse-divider"></div>
                         <h6 class="collapse-header">Equipos de Comunicacion:</h6>
-                        <a class="collapse-item" href="{$ruta}main/hardware/Equipos de Comunicacion/switches.php">Switches</a> <!--Cambiar las rutas al final si te es necesario-->
+                        <a class="collapse-item" href="{$ruta}main/hardware/Equipos de Comunicacion/index.php">Equipos de comunicacion</a> <!--Cambiar las rutas al final si te es necesario-->
                         <a class="collapse-item" href="{$ruta}main/hardware/Equipos de Comunicacion/routers.php">Routers</a>
                         <a class="collapse-item" href="{$ruta}main/hardware/Equipos de Comunicacion/conmutadores.php">Conmutadores</a>
                         <a class="collapse-item" href="{$ruta}main/hardware/Equipos de Comunicacion/accespoint.php">Access Point</a>
@@ -112,15 +94,14 @@ function getSidebar($ruta = '')
             
             <!--Esto es lo tuyo chris para que le agregues los necesarios o me avises-->
             <li class="nav-item ">
-                <a class="nav-link" href="#" data-toggle="collapse" data-target="#collapsePage3" aria-expanded="true"
+                <a class="nav-link" href="#" data-toggle="collapse" data-target="#collapsePages3" aria-expanded="true"
                     aria-controls="collapsePages">
                     <i class="fas fa-fw fa-folder"></i>
                     <span>Electrico</span>
                 </a>
-                <div id="collapsePages3" class="collapse " aria-labelledby="headingPages"
+                <div id="collapsePages3" class="collapse" aria-labelledby="headingPages"
                     data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <div class="collapse-divider"></div>
                         <h6 class="collapse-header">Red de datos:</h6>
                         <a class="collapse-item" href="{$ruta}main/electrica/Red de Datos/ipdirectory.php">Directorio de IP's</a> <!--Cambiar las rutas al final si te es necesario-->
                         <a class="collapse-item" href="{$ruta}main/electrica/Red de Datos/nodedate.php">Node de datos</a> <!--Cambiar las rutas al final si te es necesario-->
@@ -137,31 +118,9 @@ function getSidebar($ruta = '')
                 </div>
             </li>
             
-            <!-- Divider -->
-            <hr class="sidebar-divider">
+            <!--Termina el orden de las carpetas -->
 
-            <!-- Heading -->
-            <div class="sidebar-heading">
-                Addons
-            </div>
-
-            <!-- Nav Item - Charts -->
-            <!--<li class="nav-item">
-                <a class="nav-link" href="{$ruta}charts.html">
-                    <i class="fas fa-fw fa-chart-area"></i>
-                    <span>Charts</span></a>
-            </li> -->
-
-            
-
-              
-            <!-- Nav Item - Tables -->
-            <li class="nav-item">
-                <a class="nav-link" href="{$ruta}template/tables.php">
-                    <i class="fas fa-fw fa-table"></i>
-                    <span>Tables</span></a>
-            </li>
-
+           
             <!-- Divider -->
             <hr class="sidebar-divider d-none d-md-block">
 
