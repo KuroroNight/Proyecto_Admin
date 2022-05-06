@@ -50,42 +50,70 @@ define('RUTA_INCLUDE', '../../../'); //ajustar a necesidad
             <!-- DataTales Example -->
             <div class="card shadow mb-4">
                 <div class="card-header py-3">
-                    <h6 class="m-0 font-weight-bold text-primary">Tabla con los dispositivos </h6>
+                    <h6 class="m-0 font-weight-bold text-primary">Tabla con los softwares</h6>
                 </div>
-                <div class="card-body">
-                    <div class="table-responsive">
-                        <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-                            <thead>
+                <?php
+                if (count($hardware) > 0){
+                    ?>
+                <div class="table-responsive">
+                    <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                        <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Licencia</th>
+                            <th>tipo_software</th>
+                            <th>num_maquinas</th>
+                            <th>num_usuarios</th>
+                            <th>area</th>
+                            <th>IP_equipo</th>
+                            <th>status</th>
+                        </tr>
+                        </thead>
+
+                        <tfoot>
+                        <tr>
+                            <th>#</th>
+                            <th>Licencia</th>
+                            <th>tipo_software</th>
+                            <th>num_maquinas</th>
+                            <th>num_usuarios</th>
+                            <th>area</th>
+                            <th>IP_equipo</th>
+                            <th>status</th>
+                        </tr>
+                        </tfoot>
+
+                        <tbody>
+                        <?php
+                        $contador = 0;
+                        foreach ($softwares as $p) {
+                            $id = $p['licencia'];
+                            ?>
                             <tr>
-                                <th>Marca</th>
-                                <th>Modelo</th>
-                                <th>Responsable</th>
-                                <th>MAC</th>
-                                <th>Localizacion</th>
+                                <td><?php echo ++$contador ?></td>
+                                <td><?php echo $p['licencia'] ?></td>
+                                <td><?php echo $p['tipo_software'] ?></td>
+                                <td><?php echo $p['num_maquinas'] ?></td>
+                                <td><?php echo $p['num_usuarios'] ?></td>
+                                <td><?php echo $p['area'] ?></td>
+                                <td><?php echo $p['IP_equipo'] ?></td>
+                                <td><?php echo $p['status'] ?></td>
+                                <td><a href="nuevosoftware.php?id=<?php echo $id ?>""
+                                    class="btn btn-link btn-sm">Editar</a> <a
+                                            href="eliminarSoftware.php?id=<?php echo $id ?>"
+                                            class="btn btn-link btn-sm">Eliminar</a></td>
                             </tr>
-                            </thead>
-                            <tfoot>
-                            <tr>
-                                <th>Marca</th>
-                                <th>Modelo</th>
-                                <th>Responsable</th>
-                                <th>MAC</th>
-                                <th>Localizacion</th>
-                            </tr>
-                            </tfoot>
-                            <tbody>
-                            <tr>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td><a href="add-device.php" class="btn btn-link btn-sm">Editar</a> <a href="eliminarDispositvo.php" class="btn btn-link btn-sm">Eliminar</a></td>
-                            </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
+                            <?php
+                        }
+                        ?>
+                        </tbody>
+                    </table>
+
+                    <?php
+                } else {
+                    echo "<h4 class ='text-center'>No hay hardwares </h4>";
+                }
+                ?>
             </div>
 
         </div>

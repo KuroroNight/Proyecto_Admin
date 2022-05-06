@@ -1,5 +1,5 @@
 <?php
-$db = mysqli_connect('localhost','root','','proyecto');
+$db = mysqli_connect('localhost','root','','proyecto_ti');
 
 if ($db === false) { //¿error?
     exit('Error en la conexión con la bd');

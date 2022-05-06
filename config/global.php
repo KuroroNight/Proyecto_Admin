@@ -235,6 +235,7 @@ function getBottomIncudes($ruta = '')
 
     <!-- Custom scripts for all pages-->
     <script src="{$ruta}js/sb-admin-2.min.js"></script>
+
 E0D;
     echo $html;
 }

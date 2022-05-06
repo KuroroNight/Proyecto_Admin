@@ -1,6 +1,14 @@
 <?php
 require_once '../../config/global.php';
+require '../../config/db.php';
+$sql = "Select * from software";
+$resultado = mysqli_query($db, $sql);
 
+if ($resultado) {
+    while ($fila = mysqli_fetch_assoc($resultado)) {
+        $softwares[] = $fila;
+    }
+}
 
 define('RUTA_INCLUDE', '../../'); //ajustar a necesidad
 ?>
@@ -18,7 +26,7 @@ define('RUTA_INCLUDE', '../../'); //ajustar a necesidad
     <title><?php echo PAGE_TITLE ?></title>
 
 
-    <?php getTopIncludes(RUTA_INCLUDE ) ?>
+    <?php getTopIncludes(RUTA_INCLUDE) ?>
 </head>
 
 <body id="page-top">
@@ -52,40 +60,70 @@ define('RUTA_INCLUDE', '../../'); //ajustar a necesidad
                 <div class="card-header py-3">
                     <h6 class="m-0 font-weight-bold text-primary">Tabla con los softwares</h6>
                 </div>
-                <div class="card-body">
-                    <div class="table-responsive">
-                        <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-                            <thead>
+                <?php
+                if (count($softwares) > 0){
+                ?>
+                <div class="table-responsive">
+                    <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                        <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Licencia</th>
+                            <th>tipo_software</th>
+                            <th>num_maquinas</th>
+                            <th>num_usuarios</th>
+                            <th>area</th>
+                            <th>IP_equipo</th>
+                            <th>status</th>
+                        </tr>
+                        </thead>
+
+                        <tfoot>
+                        <tr>
+                            <th>#</th>
+                            <th>Licencia</th>
+                            <th>tipo_software</th>
+                            <th>num_maquinas</th>
+                            <th>num_usuarios</th>
+                            <th>area</th>
+                            <th>IP_equipo</th>
+                            <th>status</th>
+                        </tr>
+                        </tfoot>
+
+                        <tbody>
+                        <?php
+                        $contador = 0;
+                        foreach ($softwares as $p) {
+                            $id = $p['licencia'];
+                            ?>
                             <tr>
-                                <th>Software</th>
-                                <th>Start date</th>
-                                <th>Finish date</th>
+                                <td><?php echo ++$contador ?></td>
+                                <td><?php echo $p['licencia'] ?></td>
+                                <td><?php echo $p['tipo_software'] ?></td>
+                                <td><?php echo $p['num_maquinas'] ?></td>
+                                <td><?php echo $p['num_usuarios'] ?></td>
+                                <td><?php echo $p['area'] ?></td>
+                                <td><?php echo $p['IP_equipo'] ?></td>
+                                <td><?php echo $p['status'] ?></td>
+                                <td><a href="nuevosoftware.php?id=<?php echo $id ?>""
+                                       class="btn btn-link btn-sm">Editar</a> <a
+                                            href="eliminarSoftware.php?id=<?php echo $id ?>"
+                                            class="btn btn-link btn-sm">Eliminar</a></td>
                             </tr>
-                            </thead>
-                            <tfoot>
-                            <tr>
-                                <th>Software</th>
-                                <th>Start date</th>
-                                <th>Finish date</th>
-                            </tr>
-                            </tfoot>
-                            <tbody>
-                            <tr>
-                                <td>Windows</td>
-                                <td>5/17/2021</td>
-                                <td>5/17/2022</td>
-                                <td><a href="nuevosoftware.php" class="btn btn-link btn-sm">Editar</a> <a href="eliminarSoftware.php" class="btn btn-link btn-sm">Eliminar</a></td>
-                            </tr>
-                            <tr>
-                                <td>Oracle</td>
-                                <td>4/18/2021</td>
-                                <td>4/18/2022</td>
-                                <td><a href="nuevosoftware.php" class="btn btn-link btn-sm">Editar</a> <a href="eliminarSoftware.php" class="btn btn-link btn-sm">Eliminar</a></td>
-                            </tr>
-                            </tbody>
-                        </table>
-                    </div>
+                            <?php
+                        }
+                        ?>
+                        </tbody>
+                    </table>
+
+                    <?php
+                    } else {
+                        echo "<h4 class ='text-center'>No hay softwares </h4>";
+                    }
+                    ?>
                 </div>
+
             </div>
 
         </div>
@@ -106,7 +144,7 @@ define('RUTA_INCLUDE', '../../'); //ajustar a necesidad
 
 <?php getModalLogout() ?>
 
-<?php getBottomIncudes( RUTA_INCLUDE ) ?>
+<?php getBottomIncudes(RUTA_INCLUDE) ?>
 </body>
 
 </html>

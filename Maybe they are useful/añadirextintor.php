@@ -63,7 +63,7 @@ define('RUTA_INCLUDE', '../../'); //ajustar a necesidad
                         <button type="submit" class="btn btn-success" >Añadir</button>
                     </div>
                     <div class="col text-right">
-                        <a href="index.php" class="btn btn-link">Cancelar</a>
+                        <a href="../main/software/index.php" class="btn btn-link">Cancelar</a>
                     </div>
                 </div>
 

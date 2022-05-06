@@ -16,7 +16,6 @@ if($resultado){
 
 */
 
-
 define('RUTA_INCLUDE', '../../'); //ajustar a necesidad
 ?>
 <!DOCTYPE html>
