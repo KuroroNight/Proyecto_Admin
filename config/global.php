@@ -34,15 +34,21 @@ function getSidebar($ruta = '')
             <!---Este pedo es para las paginas Index de Hardware y Electrica, si es que se necesita mostrar toda la informacion -->
             
             <li class="nav-item">
-                    <a class="nav-link" href="{$ruta}main/electrica/index.php">
+                    <a class="nav-link" href="{$ruta}main/Categoria/index.php">
                     <i class="fas fa-fw fa-power-off"></i>
-                    <span>Tabla de Informacion</span></a>
+                    <span>Tabla de Categorias</span></a>
             </li>
 
             <li class="nav-item">
-                    <a class="nav-link" href="{$ruta}main/hardware/Puesto de Servicio/index.php">
+                    <a class="nav-link" href="{$ruta}main/hardware/index.php">
                     <i class="fas fa-fw fa-tablet"></i>
                     <span>Tabla de dispositivos</span></a>
+            </li>
+            
+            <li class="nav-item">
+                    <a class="nav-link" href="{$ruta}main/area/index.php">
+                    <i class="fas fa-fw fa-tablet"></i>
+                    <span>Tabla de los roles</span></a>
             </li>
 
    
@@ -72,13 +78,13 @@ function getSidebar($ruta = '')
                 <a class="nav-link" href="#" data-toggle="collapse" data-target="#collapsePages2" aria-expanded="true"
                     aria-controls="collapsePages">
                     <i class="fas fa-fw fa-folder"></i>
-                    <span>Hardware</span>
+                    <span>Empleados</span>
                 </a>
                 <div id="collapsePages2" class="collapse " aria-labelledby="headingPages"
                     data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">Equipos de Comunicacion:</h6>
-                        <a class="collapse-item" href="{$ruta}main/hardware/Equipos de Comunicacion/index.php">Equipos de comunicacion</a> <!--Cambiar las rutas al final si te es necesario-->
+                        <h6 class="collapse-header">Empleados:</h6>
+                        <a class="collapse-item" href="{$ruta}main/Empleados/index.php">Equipos de comunicacion</a> <!--Cambiar las rutas al final si te es necesario-->
                     </div>
                 </div>
             </li>
@@ -96,17 +102,17 @@ function getSidebar($ruta = '')
                     data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Red de datos:</h6>
-                        <a class="collapse-item" href="{$ruta}main/electrica/Red de Datos/ipdirectory.php">Directorio de IP's</a> <!--Cambiar las rutas al final si te es necesario-->
-                        <a class="collapse-item" href="{$ruta}main/electrica/Red de Datos/nodedate.php">Node de datos</a> <!--Cambiar las rutas al final si te es necesario-->
+                        <a class="collapse-item" href="{$ruta}main/Categoria/Red de Datos/ipdirectory.php">Directorio de IP's</a> <!--Cambiar las rutas al final si te es necesario-->
+                        <a class="collapse-item" href="{$ruta}main/Categoria/Red de Datos/nodedate.php">Node de datos</a> <!--Cambiar las rutas al final si te es necesario-->
                         <div class="collapse-divider"></div>
                         <h6 class="collapse-header">Red Electrica:</h6>
-                        <a class="collapse-item" href="{$ruta}main/electrica/Red Electrica/tableros.php">Tableros Electricos</a>
-                        <a class="collapse-item" href="{$ruta}main/electrica/Red Electrica/nodos.php">Nodos Electricos</a>
-                        <a class="collapse-item" href="{$ruta}main/electrica/Red Electrica/emergencyplant.php">Planta de Emergencia</a>
-                        <a class="collapse-item" href="{$ruta}main/electrica/Red Electrica/ups.php">UPS</a>
+                        <a class="collapse-item" href="{$ruta}main/Categoria/Red Electrica/tableros.php">Tableros Electricos</a>
+                        <a class="collapse-item" href="{$ruta}main/Categoria/Red Electrica/nodos.php">Nodos Electricos</a>
+                        <a class="collapse-item" href="{$ruta}main/Categoria/Red Electrica/emergencyplant.php">Planta de Emergencia</a>
+                        <a class="collapse-item" href="{$ruta}main/Categoria/Red Electrica/ups.php">UPS</a>
                         <div class="collapse-divider"></div>
                         <h6 class="collapse-header">Sistema de enfriamiento:</h6>
-                        <a class="collapse-item" href="{$ruta}main/electrica/Sistema de Enfriamiento/aircooler.php">Sistema de enfriamiento</a>
+                        <a class="collapse-item" href="{$ruta}main/Categoria/Sistema de Enfriamiento/aircooler.php">Sistema de enfriamiento</a>
                     </div>
                 </div>
             </li>
