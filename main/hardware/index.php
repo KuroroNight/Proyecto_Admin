@@ -1,6 +1,6 @@
 <?php
-require_once '../../../config/global.php';
-require '../../../config/db.php';
+require_once '../../config/global.php';
+require '../../config/db.php';
 $sql = "Select * from hardware";
 $resultado = mysqli_query($db, $sql);
 
@@ -13,7 +13,7 @@ if ($resultado) {
 
 
 
-define('RUTA_INCLUDE', '../../../'); //ajustar a necesidad
+define('RUTA_INCLUDE', '../../'); //ajustar a necesidad
 ?>
 <!DOCTYPE html>
 <html lang="es">
