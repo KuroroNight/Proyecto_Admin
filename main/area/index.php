@@ -47,14 +47,14 @@ define('RUTA_INCLUDE', '../../'); //ajustar a necesidad
             <!-- Page Content -->
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
-                    <li class="breadcrumb-item">Hardware</li>
-                    <li class="breadcrumb-item active" aria-current="page">Dispositivos </li>
+                    <li class="breadcrumb-item">Area</li>
+                    <li class="breadcrumb-item active" aria-current="page">Areas </li>
                 </ol>
             </nav>
 
             <div class="row my-3">
                 <div class="col text-right">
-                    <a class="btn btn-primary" href="agregarpuesto.php">Añadir uno nuevo</a>
+                    <a class="btn btn-primary" href="añdirnuevo.php">Añadir uno nuevo</a>
                 </div>
             </div>
 
@@ -71,14 +71,8 @@ define('RUTA_INCLUDE', '../../'); //ajustar a necesidad
                         <thead>
                         <tr>
                             <th>#</th>
-                            <th>Marca</th>
-                            <th>Modelo</th>
-                            <th>Funcion</th>
-                            <th>Encargado</th>
-                            <th>Categoria</th>
-                            <th>Area</th>
-                            <th>Conexiones</th>
-                            <th>Software</th>
+                            <th>Nombre</th>
+                            <th>Ubicacion</th>
                             <th>Status</th>
                         </tr>
                         </thead>
@@ -86,14 +80,8 @@ define('RUTA_INCLUDE', '../../'); //ajustar a necesidad
                         <tfoot>
                         <tr>
                             <th>#</th>
-                            <th>Marca</th>
-                            <th>Modelo</th>
-                            <th>Funcion</th>
-                            <th>Encargado</th>
-                            <th>Categoria</th>
-                            <th>Area</th>
-                            <th>Conexiones</th>
-                            <th>Software</th>
+                            <th>Nombre</th>
+                            <th>Ubicacion</th>
                             <th>Status</th>
                         </tr>
                         </tfoot>
@@ -102,13 +90,13 @@ define('RUTA_INCLUDE', '../../'); //ajustar a necesidad
                         <?php
                         $contador = 0;
                         foreach ($area as $p) {
-                            $id = $p['id_equipo'];
+                            $id = $p['id_area'];
                             ?>
                             <tr>
                                 <td><?php echo ++$contador ?></td>
-                                <td><?php echo $p['marca'] ?></td>
-                                <td><?php echo $p['modelo'] ?></td>
-                                <td><?php echo $p['funcion'] ?></td>
+                                <td><?php echo $p['nombre'] ?></td>
+                                <td><?php echo $p['ubicacion'] ?></td>
+                                <td><?php echo $p['status'] ?></td>
                                 <td><a href=".php?id=<?php echo $id ?>""
                                     class="btn btn-link btn-sm">Editar</a> <a
                                         href=".php?id=<?php echo $id ?>"

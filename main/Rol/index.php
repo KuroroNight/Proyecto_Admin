@@ -71,14 +71,7 @@ define('RUTA_INCLUDE', '../../'); //ajustar a necesidad
                         <thead>
                         <tr>
                             <th>#</th>
-                            <th>Marca</th>
-                            <th>Modelo</th>
-                            <th>Funcion</th>
-                            <th>Encargado</th>
-                            <th>Categoria</th>
-                            <th>Area</th>
-                            <th>Conexiones</th>
-                            <th>Software</th>
+                            <th>Nombre</th>
                             <th>Status</th>
                         </tr>
                         </thead>
@@ -86,14 +79,7 @@ define('RUTA_INCLUDE', '../../'); //ajustar a necesidad
                         <tfoot>
                         <tr>
                             <th>#</th>
-                            <th>Marca</th>
-                            <th>Modelo</th>
-                            <th>Funcion</th>
-                            <th>Encargado</th>
-                            <th>Categoria</th>
-                            <th>Area</th>
-                            <th>Conexiones</th>
-                            <th>Software</th>
+                            <th>Nombre</th>
                             <th>Status</th>
                         </tr>
                         </tfoot>
@@ -102,12 +88,12 @@ define('RUTA_INCLUDE', '../../'); //ajustar a necesidad
                         <?php
                         $contador = 0;
                         foreach ($rol as $p) {
-                            $id = $p['id_equipo'];
+                            $id = $p['id_rol'];
                             ?>
                             <tr>
                                 <td><?php echo ++$contador ?></td>
-                                <td><?php echo $p['marca'] ?></td>
-                                <td><?php echo $p['modelo'] ?></td>
+                                <td><?php echo $p['nombre'] ?></td>
+                                <td><?php echo $p['status'] ?></td>
                                 <td><a href=".php?id=<?php echo $id ?>""
                                     class="btn btn-link btn-sm">Editar</a> <a
                                         href=".php?id=<?php echo $id ?>"

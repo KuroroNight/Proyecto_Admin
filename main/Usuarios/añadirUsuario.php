@@ -14,20 +14,9 @@ if($resultado){
     }
 }
 
-
-
 */
-$query = "Select id_usuario from usuarios";
-$resutl = mysqli_query($db, $query);
 
-if ($resutl) {
-    while ($fila = mysqli_fetch_assoc($resutl)) {
-        $usuario[] = $fila;
-    }
-}
-
-
-define('RUTA_INCLUDE', '../../../'); //ajustar a necesidad
+define('RUTA_INCLUDE', '../../'); //ajustar a necesidad
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -60,13 +49,13 @@ define('RUTA_INCLUDE', '../../../'); //ajustar a necesidad
 
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
-                    <li class="breadcrumb-item">Software</li>
-                    <li class="breadcrumb-item active" aria-current="page">Añadir Dispositivo</li>
+                    <li class="breadcrumb-item">Usuario</li>
+                    <li class="breadcrumb-item active" aria-current="page">Añadir Usuario</li>
                 </ol>
             </nav>
 
             <!-- Page Content -->
-            <form action="add.php" method="post" enctype="multipart/form-data">
+            <form action="add-user.php" method="post" enctype="multipart/form-data">
                 <!-- <input type="hidden" name="id_estado" value="<//?php echo $id_estado ?>" />-->
                 <div class="row mb-5">
                     <div class="col">
@@ -82,54 +71,27 @@ define('RUTA_INCLUDE', '../../../'); //ajustar a necesidad
                     <div class="form-group col-md-6">
                         <label>Nombre</label>
                         <input type="text" name="nombre" class="form-control"
-                               placeholder="Nombre">
+                               placeholder="Nombre ">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label>Contraseña</label>
+                        <input type="password" name="pass" class="form-control"
+                               placeholder="Contraseña">
                     </div>
 
                     <div class="form-group col-md-6">
-                        <label>Cargo</label>
-                        <input type="text" name="cargo" class="form-control"
-                               placeholder="Cargo">
+                        <label>Rol</label>
+                        <SELECT NAME="rol_id" id="rol" class="form-control ">
+                            <option>Selecciona un opcion</option>
+                            <option value="1">Usuario administrador</option>
+                            <option value="2">Usuario normal</option>
+                        </SELECT>
                     </div>
 
                     <div class="form-group col-md-6">
-                        <label>Email</label>
-                        <input type="email" name="email" class="form-control"
-                               placeholder="Email">
-                    </div>
-
-                    <div class="form-group col-md-6">
-                        <label>Telefono</label>
-                        <input type="number" name="phone" class="form-control"
-                               placeholder="telefono">
-                    </div>
-
-                    <div class="form-group col-md-6">
-                        <label>Usuario</label>
-                        <?php
-                        if (count($usuario) > 0) {
-                            ?>
-                            <Select name="user" class="form-control">
-                                <?php
-                                $contador = 0;
-                                foreach ($usuario
-                                         as $p) {
-                                    ++$contador
-                                    ?>
-                                    <option><?php echo $p['id_usuario'] ?></option>
-                                    <?php
-                                }
-                                ?>
-                            </Select>
-                            <?php
-                        }
-                        ?>
-                    </div>
-
-
-                    <div class="form-group col-md-6">
-                        <label>Departamento</label>
-                        <input type="text" name="dept" class="form-control"
-                               placeholder="Departamento">
+                        <label>Status</label>
+                        <input type="text" name="stat" class="form-control"
+                               placeholder="Status">
                     </div>
                 </div>
             </form>
@@ -155,3 +117,4 @@ define('RUTA_INCLUDE', '../../../'); //ajustar a necesidad
 </body>
 
 </html>
+

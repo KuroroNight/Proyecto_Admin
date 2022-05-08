@@ -10,9 +10,6 @@ if ($resultado) {
     }
 }
 
-
-
-
 define('RUTA_INCLUDE', '../../'); //ajustar a necesidad
 ?>
 <!DOCTYPE html>
@@ -47,21 +44,21 @@ define('RUTA_INCLUDE', '../../'); //ajustar a necesidad
             <!-- Page Content -->
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
-                    <li class="breadcrumb-item">Hardware</li>
-                    <li class="breadcrumb-item active" aria-current="page">Dispositivos </li>
+                    <li class="breadcrumb-item">Usuarios</li>
+                    <li class="breadcrumb-item active" aria-current="page">Usuarios </li>
                 </ol>
             </nav>
 
             <div class="row my-3">
                 <div class="col text-right">
-                    <a class="btn btn-primary" href="agregarpuesto.php">Añadir uno nuevo</a>
+                    <a class="btn btn-primary" href="añadirUsuario.php">Añadir uno nuevo</a>
                 </div>
             </div>
 
             <!-- DataTales Example -->
             <div class="card shadow mb-4">
                 <div class="card-header py-3">
-                    <h6 class="m-0 font-weight-bold text-primary">Tabla con los hardware</h6>
+                    <h6 class="m-0 font-weight-bold text-primary">Tabla con los Usuarios</h6>
                 </div>
                 <?php
                 if (count($usuarios) > 0){
@@ -71,14 +68,9 @@ define('RUTA_INCLUDE', '../../'); //ajustar a necesidad
                         <thead>
                         <tr>
                             <th>#</th>
-                            <th>Marca</th>
-                            <th>Modelo</th>
-                            <th>Funcion</th>
-                            <th>Encargado</th>
-                            <th>Categoria</th>
-                            <th>Area</th>
-                            <th>Conexiones</th>
-                            <th>Software</th>
+                            <th>Nombre</th>
+                            <th>Contraseña</th>
+                            <th>Rol</th>
                             <th>Status</th>
                         </tr>
                         </thead>
@@ -86,14 +78,9 @@ define('RUTA_INCLUDE', '../../'); //ajustar a necesidad
                         <tfoot>
                         <tr>
                             <th>#</th>
-                            <th>Marca</th>
-                            <th>Modelo</th>
-                            <th>Funcion</th>
-                            <th>Encargado</th>
-                            <th>Categoria</th>
-                            <th>Area</th>
-                            <th>Conexiones</th>
-                            <th>Software</th>
+                            <th>Nombre</th>
+                            <th>Contraseña</th>
+                            <th>Rol</th>
                             <th>Status</th>
                         </tr>
                         </tfoot>
@@ -102,12 +89,19 @@ define('RUTA_INCLUDE', '../../'); //ajustar a necesidad
                         <?php
                         $contador = 0;
                         foreach ($usuarios as $p) {
-                            $id = $p['id_equipo'];
+                            $id = $p['id_usuario'];
                             ?>
                             <tr>
                                 <td><?php echo ++$contador ?></td>
-                                <td><?php echo $p['marca'] ?></td>
-
+                                <td><?php echo $p['nombre'] ?></td>
+                                <td><?php echo $p['contrasena'] ?></td>
+                                <td><?php
+                                    if($p['rol'] == 1){
+                                        echo "Admin";
+                                    }else{
+                                        echo "Normal";
+                                    }?></td>
+                                <td><?php echo $p['status'] ?></td>
                                 <td><a href=".php?id=<?php echo $id ?>""
                                     class="btn btn-link btn-sm">Editar</a> <a
                                         href=".php?id=<?php echo $id ?>"

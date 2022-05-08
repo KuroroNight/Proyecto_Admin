@@ -45,21 +45,21 @@ define('RUTA_INCLUDE', '../../'); //ajustar a necesidad
             <!-- Page Content -->
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
-                    <li class="breadcrumb-item">Electricas</li>
-                    <li class="breadcrumb-item active" aria-current="page"> </li>
+                    <li class="breadcrumb-item">Categoria</li>
+                    <li class="breadcrumb-item active" aria-current="page"> Categorias</li>
                 </ol>
             </nav>
 
             <div class="row my-3">
                 <div class="col text-right">
-                    <a class="btn btn-primary" href=".php">Crear uno nuevo</a>
+                    <a class="btn btn-primary" href="añadircate.php">Crear uno nuevo</a>
                 </div>
             </div>
 
             <!-- DataTales Example -->
             <div class="card shadow mb-4">
                 <div class="card-header py-3">
-                    <h6 class="m-0 font-weight-bold text-primary">Tabla con los empleados</h6>
+                    <h6 class="m-0 font-weight-bold text-primary">Tabla con las categorias</h6>
                 </div>
                 <?php
                 if (count($categoria) > 0){

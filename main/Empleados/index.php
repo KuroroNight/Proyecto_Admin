@@ -53,7 +53,7 @@ define('RUTA_INCLUDE', '../../'); //ajustar a necesidad
 
             <div class="row my-3">
                 <div class="col text-right">
-                    <a class="btn btn-primary" href=".php">Crear uno nuevo</a>
+                    <a class="btn btn-primary" href="agregar.php">Crear uno nuevo</a>
                 </div>
             </div>
 

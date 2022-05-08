@@ -1,0 +1,11 @@
+<?php $query = "Select id_rol from roles";
+                        $contador = 0;
+                        $resutl = mysqli_query($db,$query);
+                        while ($row =mysqli_fetch_assoc($resutl)){
+                            echo '<OPTION VALUE='.$row['id_rol'].'> </OPTION>';
+                        }?>
+
+
+
+                        <input type="text" name="user" class="form-control"
+                                                       placeholder="">
