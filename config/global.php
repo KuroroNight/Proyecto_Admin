@@ -57,6 +57,8 @@ function getSidebar($ruta = '')
                     <span>Tabla de los roles</span></a>
             </li>
 
+         
+
    
             
          <!---Esto es lo de las carpetas para que se vea ordenada la Informacion -->
@@ -88,7 +90,8 @@ function getSidebar($ruta = '')
                     data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Empleados:</h6>
-                        <a class="collapse-item" href="{$ruta}main/Empleados/index.php">Empleados</a> <!--Cambiar las rutas al final si te es necesario-->
+                        <a class="collapse-item" href="{$ruta}main/Empleados/index.php">Empleados</a>
+                         <a class="nav-link" href="{$ruta}main/Usuarios/index.php">Usuarios</a><!--Cambiar las rutas al final si te es necesario-->
                     </div>
                 </div>
             </li>

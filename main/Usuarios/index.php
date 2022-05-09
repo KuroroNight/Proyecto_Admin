@@ -4,6 +4,8 @@ require '../../config/db.php';
 $sql = "Select * from usuarios";
 $resultado = mysqli_query($db, $sql);
 
+$usuarios = array();
+
 if ($resultado) {
     while ($fila = mysqli_fetch_assoc($resultado)) {
         $usuarios[] = $fila;
@@ -89,7 +91,6 @@ define('RUTA_INCLUDE', '../../'); //ajustar a necesidad
                         <?php
                         $contador = 0;
                         foreach ($usuarios as $p) {
-                            $id = $p['id_usuario'];
                             ?>
                             <tr>
                                 <td><?php echo ++$contador ?></td>
@@ -102,9 +103,9 @@ define('RUTA_INCLUDE', '../../'); //ajustar a necesidad
                                         echo "Normal";
                                     }?></td>
                                 <td><?php echo $p['status'] ?></td>
-                                <td><a href=".php?id=<?php echo $id ?>""
+                                <td><a href=".php?id=<?php echo $p['id_usuario'] ?>""
                                     class="btn btn-link btn-sm">Editar</a> <a
-                                        href=".php?id=<?php echo $id ?>"
+                                        href="borraruser.php?id=<?php echo $p['id_usuario'] ?>"
                                         class="btn btn-link btn-sm">Eliminar</a></td>
                             </tr>
                             <?php

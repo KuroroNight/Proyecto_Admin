@@ -54,7 +54,7 @@ define('RUTA_INCLUDE', '../../'); //ajustar a necesidad
 
             <div class="row my-3">
                 <div class="col text-right">
-                    <a class="btn btn-primary" href="agregarpuesto.php">Añadir uno nuevo</a>
+                    <a class="btn btn-primary" href="añadirrol.php">Añadir uno nuevo</a>
                 </div>
             </div>
 
@@ -96,7 +96,7 @@ define('RUTA_INCLUDE', '../../'); //ajustar a necesidad
                                 <td><?php echo $p['status'] ?></td>
                                 <td><a href=".php?id=<?php echo $id ?>""
                                     class="btn btn-link btn-sm">Editar</a> <a
-                                        href=".php?id=<?php echo $id ?>"
+                                        href="deleterol.php?id=<?php echo $id ?>"
                                         class="btn btn-link btn-sm">Eliminar</a></td>
                             </tr>
                             <?php

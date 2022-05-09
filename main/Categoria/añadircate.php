@@ -51,8 +51,8 @@ define('RUTA_INCLUDE', '../../'); //ajustar a necesidad
 
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
-                    <li class="breadcrumb-item">Software</li>
-                    <li class="breadcrumb-item active" aria-current="page">Añadir software</li>
+                    <li class="breadcrumb-item">Categoria</li>
+                    <li class="breadcrumb-item active" aria-current="page">Añadir Categoria</li>
                 </ol>
             </nav>
 

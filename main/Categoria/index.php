@@ -94,7 +94,7 @@ define('RUTA_INCLUDE', '../../'); //ajustar a necesidad
                                 <td><?php echo $p['status'] ?></td>
                                 <td><a href="nuevaCategoria.php?id=<?php echo $id ?>""
                                     class="btn btn-link btn-sm">Editar</a> <a
-                                            href="eliminarCategoria.php?id=<?php echo $id ?>"
+                                            href="delete-cat.php?id=<?php echo $id ?>"
                                             class="btn btn-link btn-sm">Eliminar</a></td>
                             </tr>
                             <?php
