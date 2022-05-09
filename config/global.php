@@ -48,6 +48,12 @@ function getSidebar($ruta = '')
             <li class="nav-item">
                     <a class="nav-link" href="{$ruta}main/area/index.php">
                     <i class="fas fa-fw fa-tablet"></i>
+                    <span>Tabla de las areas</span></a>
+            </li>
+            
+            <li class="nav-item">
+                    <a class="nav-link" href="{$ruta}main/rol/index.php">
+                    <i class="fas fa-fw fa-tablet"></i>
                     <span>Tabla de los roles</span></a>
             </li>
 
@@ -65,9 +71,7 @@ function getSidebar($ruta = '')
                     data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Software:</h6>
-                        <a class="collapse-item" href="{$ruta}main/software/index.php">Tabla con los Softwares</a>
-                        <a class="collapse-item" href="{$ruta}main/software/extintor.php">Extintores</a>                        
-                        
+                        <a class="collapse-item" href="{$ruta}main/software/index.php">Tabla con los Softwares</a>                        
                     </div>
                 </div>
             </li>
@@ -84,38 +88,14 @@ function getSidebar($ruta = '')
                     data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Empleados:</h6>
-                        <a class="collapse-item" href="{$ruta}main/Empleados/index.php">Equipos de comunicacion</a> <!--Cambiar las rutas al final si te es necesario-->
+                        <a class="collapse-item" href="{$ruta}main/Empleados/index.php">Empleados</a> <!--Cambiar las rutas al final si te es necesario-->
                     </div>
                 </div>
             </li>
             
             
             
-            <!--Esto es lo tuyo chris para que le agregues los necesarios o me avises-->
-            <li class="nav-item ">
-                <a class="nav-link" href="#" data-toggle="collapse" data-target="#collapsePages3" aria-expanded="true"
-                    aria-controls="collapsePages">
-                    <i class="fas fa-fw fa-folder"></i>
-                    <span>Electrico</span>
-                </a>
-                <div id="collapsePages3" class="collapse" aria-labelledby="headingPages"
-                    data-parent="#accordionSidebar">
-                    <div class="bg-white py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">Red de datos:</h6>
-                        <a class="collapse-item" href="{$ruta}main/Categoria/Red de Datos/ipdirectory.php">Directorio de IP's</a> <!--Cambiar las rutas al final si te es necesario-->
-                        <a class="collapse-item" href="{$ruta}main/Categoria/Red de Datos/nodedate.php">Node de datos</a> <!--Cambiar las rutas al final si te es necesario-->
-                        <div class="collapse-divider"></div>
-                        <h6 class="collapse-header">Red Electrica:</h6>
-                        <a class="collapse-item" href="{$ruta}main/Categoria/Red Electrica/tableros.php">Tableros Electricos</a>
-                        <a class="collapse-item" href="{$ruta}main/Categoria/Red Electrica/nodos.php">Nodos Electricos</a>
-                        <a class="collapse-item" href="{$ruta}main/Categoria/Red Electrica/emergencyplant.php">Planta de Emergencia</a>
-                        <a class="collapse-item" href="{$ruta}main/Categoria/Red Electrica/ups.php">UPS</a>
-                        <div class="collapse-divider"></div>
-                        <h6 class="collapse-header">Sistema de enfriamiento:</h6>
-                        <a class="collapse-item" href="{$ruta}main/Categoria/Sistema de Enfriamiento/aircooler.php">Sistema de enfriamiento</a>
-                    </div>
-                </div>
-            </li>
+        
             
             <!--Termina el orden de las carpetas -->
 

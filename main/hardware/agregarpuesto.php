@@ -1,5 +1,7 @@
 <?php
-require_once '../../../config/global.php';
+require_once '../../config/global.php';
+require '../../config/db.php';
+
 //config db
 /*
 $id_usuario = $_SESSION['id_usuario'];
@@ -15,7 +17,7 @@ if($resultado){
 
 */
 
-define('RUTA_INCLUDE', '../../../'); //ajustar a necesidad
+define('RUTA_INCLUDE', '../../'); //ajustar a necesidad
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -67,11 +69,6 @@ define('RUTA_INCLUDE', '../../../'); //ajustar a necesidad
 
 
             <div class="form-row">
-                <div class="form-group col-md-6">
-                    <label>Nombre</label>
-                    <input type="text" name="text" class="form-control"
-                           placeholder="Nombre">
-                </div>
 
                 <div class="form-group col-md-6">
                     <label>Marca</label>
@@ -86,21 +83,148 @@ define('RUTA_INCLUDE', '../../../'); //ajustar a necesidad
                 </div>
 
                 <div class="form-group col-md-6">
-                    <label>Placeholder</label>
-                    <input type="text" name="placeholder" class="form-control"
-                           placeholder="Placeholder">
+                    <label>Funcion</label>
+                    <input type="text" name="fun" class="form-control"
+                           placeholder="Funcion">
                 </div>
 
                 <div class="form-group col-md-6">
-                    <label>MAC</label>
-                    <input type="text" name="mac" class="form-control"
-                           placeholder="MAC (Opcional)">
+                    <label>Encargado</label>
+                    <?php
+                    $query = "Select nombre    from empleados";
+                    $resutl = mysqli_query($db, $query);
+
+                    if ($resutl) {
+                        while ($fila = mysqli_fetch_assoc($resutl)) {
+                            $empleado[] = $fila;
+                        }
+                    }
+
+                    if (count($empleado) > 0) {
+                        ?>
+                        <Select name="enc" class="form-control">
+                            <?php
+                            $contador = 0;
+                            foreach ($empleado
+                                     as $p) {
+                                ++$contador
+                                ?>
+                                <option><?php echo $p['nombre'] ?></option>
+                                <?php
+                            }
+                            ?>
+                        </Select>
+                        <?php
+                    }
+                    ?>
                 </div>
 
                 <div class="form-group col-md-6">
-                    <label>Localizacion</label>
-                    <input type="text" name="local" class="form-control"
-                           placeholder="Localizacion">
+                    <label>Categoria</label>
+                    <?php
+                    $query = "Select nombre from categoria";
+                    $resutl2 = mysqli_query($db, $query);
+
+                    if ($resutl) {
+                        while ($fila = mysqli_fetch_assoc($resutl2)) {
+                            $cate[] = $fila;
+                        }
+                    }
+
+                    if (count($empleado) > 0) {
+                        ?>
+                        <Select name="cat" class="form-control">
+                            <?php
+                            $contador = 0;
+                            foreach ($cate
+                                     as $p) {
+                                ++$contador
+                                ?>
+                                <option><?php echo $p['nombre'] ?></option>
+                                <?php
+                            }
+                            ?>
+                        </Select>
+                        <?php
+                    }
+                    ?>
+                </div>
+
+
+                <div class="form-group col-md-6">
+                    <label>Area</label>
+                    <?php
+                    $query = "Select nombre from area";
+                    $resutl2 = mysqli_query($db, $query);
+
+                    if ($resutl) {
+                        while ($fila = mysqli_fetch_assoc($resutl2)) {
+                            $area[] = $fila;
+                        }
+                    }
+
+                    if (count($empleado) > 0) {
+                        ?>
+                        <Select name="area" class="form-control">
+                            <?php
+                            $contador = 0;
+                            foreach ($area
+                                     as $p) {
+                                ++$contador
+                                ?>
+                                <option><?php echo $p['nombre'] ?></option>
+                                <?php
+                            }
+                            ?>
+                        </Select>
+                        <?php
+                    }
+                    ?>
+                </div>
+
+                <div class="form-group col-md-6">
+                    <label>Numero de conexiones</label>
+                    <input type="number" name="Conex" class="form-control"
+                           placeholder="Numero de conexciones">
+                </div>
+
+
+                <div class="form-group col-md-6">
+                    <label>Software</label>
+                    <?php
+                    $query = "Select licencia from software";
+                    $resutl2 = mysqli_query($db, $query);
+
+                    if ($resutl) {
+                        while ($fila = mysqli_fetch_assoc($resutl2)) {
+                            $soft[] = $fila;
+                        }
+                    }
+
+                    if (count($empleado) > 0) {
+                        ?>
+                        <Select name="soft" class="form-control">
+                            <?php
+                            $contador = 0;
+                            foreach ($soft
+                                     as $p) {
+                                ++$contador
+                                ?>
+                                <option><?php echo $p['licencia'] ?></option>
+                                <?php
+                            }
+                            ?>
+                        </Select>
+                        <?php
+                    }
+                    ?>
+                </div>
+
+
+                <div class="form-group col-md-6">
+                    <label>Status</label>
+                    <input type="text" name="stat" class="form-control"
+                           placeholder="Status">
                 </div>
             </div>
             </form>

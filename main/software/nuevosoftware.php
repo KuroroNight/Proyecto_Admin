@@ -69,21 +69,44 @@ define('RUTA_INCLUDE', '../../'); //ajustar a necesidad
 
             <div class="form-row">
                 <div class="form-group col-md-6">
-                    <label>Software</label>
-                    <input type="text" name="text" class="form-control"
-                           placeholder="Nombre Software">
-                </div>
-                <div class="form-group col-md-6">
-                    <label>Fecha de Inicio de uso</label>
-                    <input type="date" name="date" class="form-control"
-                           placeholder="Fecha">
+                    <label>Licencia</label>
+                    <input type="text" name="lin" class="form-control"
+                           placeholder="Licencia">
                 </div>
 
                 <div class="form-group col-md-6">
-                    <label>Fecha de fin de uso</label>
-                    <input type="date" name="date" class="form-control"
-                           placeholder="Fechafin">
+                    <label>Nombre Software</label>
+                    <input type="text" name="nombre" class="form-control"
+                           placeholder="Nombre">
                 </div>
+
+                <div class="form-group col-md-6">
+                    <label>Numero Maquinas</label>
+                    <input type="number" name="num" class="form-control">
+                </div>
+
+                <div class="form-group col-md-6">
+                    <label>Numero Usuarios</label>
+                    <input type="number" name="user" class="form-control">
+                </div>
+
+                <div class="form-group col-md-6">
+                    <label>Area</label>
+                    <input type="number" name="area" class="form-control">
+                </div>
+
+                <div class="form-group col-md-6">
+                    <label>Ip Equipo</label>
+                    <input type="number" name="ip" class="form-control" required pattern="^((\d|[1-9]\d|1\d\d|2[0-4]\d|25[0-5])\.){3}(\d|[1-9]\d|1\d\d|2[0-4]\d|25[0-5])$">
+                </div>
+
+                <div class="form-group col-md-6">
+                    <label>Status</label>
+                    <input type="text" name="stat" class="form-control">
+                </div>
+
+
+
             </div>
             </form>
         </div>

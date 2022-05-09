@@ -33,10 +33,10 @@ define('RUTA_INCLUDE', '../'); //ajustar a necesidad
                             <form action="login.php" method="POST">
                                 <div class="form-group">
                                     <input type="text" class="form-control form-control-user"
-                                           id="user"  placeholder="Ingresar Usuario">
+                                           id="user" name="user" placeholder="Ingresar Usuario">
                                 </div>
                                 <div class="form-group">
-                                    <input type="password" class="form-control form-control-user"
+                                    <input type="password" name="pass" class="form-control form-control-user"
                                            id="contraseña" placeholder="Contraseña">
                                 </div>
 
