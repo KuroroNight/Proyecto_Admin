@@ -1,6 +1,5 @@
 <?php
-require_once '../config/global.php';
-
+session_start();
 
 define('RUTA_INCLUDE', '../'); //ajustar a necesidad
 ?>
@@ -8,7 +7,7 @@ define('RUTA_INCLUDE', '../'); //ajustar a necesidad
 <html lang="es">
 
 
-<title><?php echo PAGE_TITLE ?></title>
+<title>Administracion</title>
 
 <!-- Custom fonts for this template-->
 <link href="../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -40,8 +39,22 @@ define('RUTA_INCLUDE', '../'); //ajustar a necesidad
                                            id="contraseña" placeholder="Contraseña">
                                 </div>
 
-                                <button class="btn btn-primary btn-user btn-block" type="submit"> Login </button>
+                                <button class="btn btn-primary btn-user btn-block" type="submit"> Login</button>
+                                <!--Alerta error de datos-->
+                                <?php
+                                if (isset($_SESSION['login_error']) == true && $_SESSION['login_error'] == 1) {
+                                    $_SESSION['login_error'] = 0;
+                                    ?>
+                                    <div class="row mt-3">
+                                        <div class="col-md-12">
+                                            <div class="alert alert-danger">Usuario o contraseña incorrecta</div>
+                                        </div>
+                                    </div>
 
+                                    <?php
+                                }
+                                ?>
+                                <!--Termina alerta error de datos-->
                             </form>
 
                         </div>

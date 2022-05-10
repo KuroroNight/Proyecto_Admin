@@ -1,5 +1,27 @@
 <?php
+//Comienza la sesión
+session_start();
 
+
+//Verifica si la sesión del usuario fue cerrada
+if(isset($_SESSION['id_user'])){
+    $id_user=$_SESSION['id_usuario'];
+    $nombre_user=$_SESSION['nombre_user'];
+    $nombre_usuario=$_SESSION['nombre_empleado'];
+
+}else{
+    $ruta='/Proyecto_Admin/main/';
+    header("location:{$ruta}index.php");
+}
+
+/*
+function verificarSesion($ruta = ''){
+    if ((empty($_SESSION['id_usuario']))) {
+        header("location: {$ruta}index.php");
+    }
+}
+*/
+//
 define('PAGE_TITLE', 'Administracion');
 
 function getSidebar($ruta = '')
@@ -28,9 +50,7 @@ function getSidebar($ruta = '')
             <div class="sidebar-heading">
                 Interface
             </div>
-
-           
-            
+    
             <!---Este pedo es para las paginas Index de Hardware y Electrica, si es que se necesita mostrar toda la informacion -->
             
             <li class="nav-item">
@@ -62,11 +82,7 @@ function getSidebar($ruta = '')
                     <i class="fas fa-fw fa-user"></i>
                     <span>Tabla de los usuarios</span></a>
             </li>
-
-         
-
-   
-            
+  
          <!---Esto es lo de las carpetas para que se vea ordenada la Informacion -->
            
             <li class="nav-item ">
@@ -97,18 +113,12 @@ function getSidebar($ruta = '')
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Empleados:</h6>
                         <a class="collapse-item" href="{$ruta}main/Empleados/index.php">Empleados</a>
-                         <a class="nav-link" href="{$ruta}main/Usuarios/index.php">Usuarios</a><!--Cambiar las rutas al final si te es necesario-->
                     </div>
                 </div>
             </li>
             
-            
-            
-        
-            
             <!--Termina el orden de las carpetas -->
 
-           
             <!-- Divider -->
             <hr class="sidebar-divider d-none d-md-block">
 
@@ -148,7 +158,7 @@ function getNavbar($ruta = '')
                                     Profile
                                 </a>
                                 <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
+                                <a class="dropdown-item" href="{$ruta}index.php" data-toggle="modal" data-target="#logoutModal">
                                     <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
                                     Logout
                                 </a>
@@ -194,7 +204,7 @@ function getModalLogout()
                 <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
                 <div class="modal-footer">
                     <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                    <a class="btn btn-primary" href="{$ruta}login.html">Logout</a>
+                    <a class="btn btn-primary" href="{$ruta}main/index.php">Logout</a>
                 </div>
             </div>
         </div>

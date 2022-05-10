@@ -32,7 +32,7 @@ define('RUTA_INCLUDE', '../'); //ajustar a necesidad
         <!-- /.container-fluid -->
 
         <div class="container">
-            <h3>Bienvenido Administrador</h3>
+            <h3>Bienvenido <?php echo  $nombre_usuario?></h3>
             <p>Este es la pagina de Inicio.</p>
 
 
