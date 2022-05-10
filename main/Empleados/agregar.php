@@ -2,21 +2,34 @@
 require_once '../../config/global.php';
 require '../../config/db.php';
 //config db
-/*
-$id_usuario = $_SESSION['id_usuario'];
-$sql = "select * from hardware where id = '$id_usuario'";
-$resultado = mysqli_query($db, $sql);
+
+$id = '';
+$name = '';
+$pass = '';
+$email = '';
+$tel = '';
+$user = '';
+$dept = '';
+
+if (!empty($_GET['id'])) {
+    $id = $_GET['id'];
+    $sql = "select * from empleados where id_empleado = $id";
+    $resultado = mysqli_query($db, $sql);
 
 
-if($resultado){
-    while ($fila = mysqli_fetch_assoc($resultado)){
+    if ($resultado) {
+        $fila2 = mysqli_fetch_assoc($resultado);
+        $name = $fila2['nombre'];
+        $pass = $fila2['cargo'];
+        $email = $fila2['email'];
+        $tel = $fila2['telefono'];
+        $user = $fila2['usuario'];
+        $dept = $fila2['departamento'];
 
     }
 }
 
 
-
-*/
 $query = "Select id_usuario from usuarios";
 $resutl = mysqli_query($db, $query);
 
@@ -67,7 +80,7 @@ define('RUTA_INCLUDE', '../../../'); //ajustar a necesidad
 
             <!-- Page Content -->
             <form action="add.php" method="post" enctype="multipart/form-data">
-                <!-- <input type="hidden" name="id_estado" value="<//?php echo $id_estado ?>" />-->
+                <input type="hidden" name="id" value="<?php echo $id?>" />
                 <div class="row mb-5">
                     <div class="col">
                         <button type="submit" class="btn btn-success">Añadir</button>
@@ -82,25 +95,25 @@ define('RUTA_INCLUDE', '../../../'); //ajustar a necesidad
                     <div class="form-group col-md-6">
                         <label>Nombre</label>
                         <input type="text" name="nombre" class="form-control"
-                               placeholder="Nombre">
+                               placeholder="Nombre" value="<?php echo $name?>">
                     </div>
 
                     <div class="form-group col-md-6">
                         <label>Cargo</label>
                         <input type="text" name="cargo" class="form-control"
-                               placeholder="Cargo">
+                               placeholder="Cargo" value="<?php echo $pass?>">
                     </div>
 
                     <div class="form-group col-md-6">
                         <label>Email</label>
                         <input type="email" name="email" class="form-control"
-                               placeholder="Email">
+                               placeholder="Email" value="<?php echo $email?>">
                     </div>
 
                     <div class="form-group col-md-6">
                         <label>Telefono</label>
                         <input type="number" name="phone" class="form-control"
-                               placeholder="telefono">
+                               placeholder="telefono" value="<?php echo $tel?>">
                     </div>
 
                     <div class="form-group col-md-6">
@@ -115,7 +128,7 @@ define('RUTA_INCLUDE', '../../../'); //ajustar a necesidad
                                          as $p) {
                                     ++$contador
                                     ?>
-                                    <option><?php echo $p['id_usuario'] ?></option>
+                                    <option value="<?php echo $user?>"><?php echo $p['id_usuario'] ?></option>
                                     <?php
                                 }
                                 ?>
@@ -129,7 +142,7 @@ define('RUTA_INCLUDE', '../../../'); //ajustar a necesidad
                     <div class="form-group col-md-6">
                         <label>Departamento</label>
                         <input type="text" name="dept" class="form-control"
-                               placeholder="Departamento">
+                               placeholder="Departamento" value="<?php echo $dept?>">
                     </div>
                 </div>
             </form>

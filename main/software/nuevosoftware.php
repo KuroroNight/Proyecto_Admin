@@ -1,20 +1,33 @@
 <?php
 require_once '../../config/global.php';
+require '../../config/db.php';
 
-//config db
-/*
-$id_usuario = $_SESSION['id_usuario'];
-$sql = "select * from hardware where id = '$id_usuario'";
-$resultado = mysqli_query($db, $sql);
+$id = '';
+
+$name = '';
+$num = '';
+$use = '';
+$area = '';
+$ip = '';
+$stat = '';
+
+if (!empty($_GET['id'])) {
+    $id = $_GET['id'];
+    $sql = "select * from software where licencia = '$id'";
+    $resultado = mysqli_query($db, $sql);
 
 
-if($resultado){
-    while ($fila = mysqli_fetch_assoc($resultado)){
+    if ($resultado) {
+        $fila = mysqli_fetch_assoc($resultado);
+        $name = $fila['tipo_software'];
+        $num = $fila['num_maquinas'];
+        $use = $fila['num_usuarios'];
+        $area = $fila['area'];
+        $ip = $fila['IP_equipo'];
+        $stat = $fila['status'];
 
     }
 }
-
-*/
 
 define('RUTA_INCLUDE', '../../'); //ajustar a necesidad
 ?>
@@ -56,58 +69,59 @@ define('RUTA_INCLUDE', '../../'); //ajustar a necesidad
 
             <!-- Page Content -->
             <form action="add-software.php" method="post" enctype="multipart/form-data">
-                <!-- <input type="hidden" name="id_estado" value="<//?php echo $id_estado ?>" />-->
-            <div class="row mb-5">
-                <div class="col">
-                    <button type="submit" class="btn btn-success" >Añadir</button>
-                </div>
-                <div class="col text-right">
-                    <a href="index.php" class="btn btn-link">Cancelar</a>
-                </div>
-            </div>
-
-
-            <div class="form-row">
-                <div class="form-group col-md-6">
-                    <label>Licencia</label>
-                    <input type="text" name="lin" class="form-control"
-                           placeholder="Licencia">
-                </div>
-
-                <div class="form-group col-md-6">
-                    <label>Nombre Software</label>
-                    <input type="text" name="nombre" class="form-control"
-                           placeholder="Nombre">
-                </div>
-
-                <div class="form-group col-md-6">
-                    <label>Numero Maquinas</label>
-                    <input type="number" name="num" class="form-control">
-                </div>
-
-                <div class="form-group col-md-6">
-                    <label>Numero Usuarios</label>
-                    <input type="number" name="user" class="form-control">
-                </div>
-
-                <div class="form-group col-md-6">
-                    <label>Area</label>
-                    <input type="number" name="area" class="form-control">
-                </div>
-
-                <div class="form-group col-md-6">
-                    <label>Ip Equipo</label>
-                    <input type="number" name="ip" class="form-control" required pattern="^((\d|[1-9]\d|1\d\d|2[0-4]\d|25[0-5])\.){3}(\d|[1-9]\d|1\d\d|2[0-4]\d|25[0-5])$">
-                </div>
-
-                <div class="form-group col-md-6">
-                    <label>Status</label>
-                    <input type="text" name="stat" class="form-control">
+                <input type="hidden" name="id" value="<?php echo $id?>" />
+                <div class="row mb-5">
+                    <div class="col">
+                        <button type="submit" class="btn btn-success">Añadir</button>
+                    </div>
+                    <div class="col text-right">
+                        <a href="index.php" class="btn btn-link">Cancelar</a>
+                    </div>
                 </div>
 
 
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label>Licencia</label>
+                        <input type="text" name="lin" class="form-control"
+                               placeholder="Licencia" value="<?php echo $id ?>">
+                    </div>
 
-            </div>
+                    <div class="form-group col-md-6">
+                        <label>Nombre Software</label>
+                        <input type="text" name="nombre" class="form-control"
+                               placeholder="Nombre" value="<?php echo $name ?>">
+                    </div>
+
+                    <div class="form-group col-md-6">
+                        <label>Numero Maquinas</label>
+                        <input type="number" name="num" class="form-control" value="<?php echo $num ?>">
+                    </div>
+
+                    <div class="form-group col-md-6">
+                        <label>Numero Usuarios</label>
+                        <input type="number" name="user" class="form-control" value="<?php echo $use ?>">
+                    </div>
+
+                    <div class="form-group col-md-6">
+                        <label>Area</label>
+                        <input type="number" name="area" class="form-control" value="<?php echo $area ?>">
+                    </div>
+
+                    <div class="form-group col-md-6">
+                        <label>Ip Equipo</label>
+                        <input type="number" name="ip" class="form-control" required
+                               pattern="^((\d|[1-9]\d|1\d\d|2[0-4]\d|25[0-5])\.){3}(\d|[1-9]\d|1\d\d|2[0-4]\d|25[0-5])$"
+                               value="<?php echo $ip ?>">
+                    </div>
+
+                    <div class="form-group col-md-6">
+                        <label>Status</label>
+                        <input type="text" name="stat" class="form-control" value="<?php echo $stat ?>">
+                    </div>
+
+
+                </div>
             </form>
         </div>
         <!-- /.container-fluid -->

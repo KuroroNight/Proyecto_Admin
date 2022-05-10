@@ -53,8 +53,14 @@ function getSidebar($ruta = '')
             
             <li class="nav-item">
                     <a class="nav-link" href="{$ruta}main/rol/index.php">
-                    <i class="fas fa-fw fa-tablet"></i>
+                    <i class="fas fa-fw fa-atlas"></i>
                     <span>Tabla de los roles</span></a>
+            </li>
+            
+            <li class="nav-item">
+                    <a class="nav-link" href="{$ruta}main/Usuarios/index.php">
+                    <i class="fas fa-fw fa-user"></i>
+                    <span>Tabla de los usuarios</span></a>
             </li>
 
          

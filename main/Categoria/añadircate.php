@@ -2,21 +2,24 @@
 require_once '../../config/global.php';
 require '../../config/db.php';
 
-/*
-$id_usuario = $_SESSION['id_usuario'];
-
-$sql = "select * from hardware where id = '$id_usuario'";
-
-$resultado = mysqli_query($db, $sql);
+$id = '';
+$name = '';
+$stat = '';
 
 
-if($resultado){
-    while ($fila = mysqli_fetch_assoc($resultado)){
+if (!empty($_GET['id'])) {
+    $id = $_GET['id'];
+    $sql = "select * from categoria where id_categoria = $id";
+    $resultado = mysqli_query($db, $sql);
+
+
+    if ($resultado) {
+        $fila2 = mysqli_fetch_assoc($resultado);
+        $name = $fila2['nombre'];
+        $stat = $fila2['status'];
 
     }
 }
-
-*/
 
 define('RUTA_INCLUDE', '../../'); //ajustar a necesidad
 ?>
@@ -58,7 +61,7 @@ define('RUTA_INCLUDE', '../../'); //ajustar a necesidad
 
             <!-- Page Content -->
             <form action="add-category.php" method="post" enctype="multipart/form-data">
-                <!-- <input type="hidden" name="id_estado" value="<//?php echo $id_estado ?>" />-->
+                <input type="hidden" name="id" value="<?php echo $id?>" />
                 <div class="row mb-5">
                     <div class="col">
                         <button type="submit" class="btn btn-success" >Añadir</button>
@@ -73,13 +76,13 @@ define('RUTA_INCLUDE', '../../'); //ajustar a necesidad
                     <div class="form-group col-md-6">
                         <label>Nombre</label>
                         <input type="text" name="nombre" class="form-control"
-                               placeholder="Nombre">
+                               placeholder="Nombre" value="<?php echo $name?>">
                     </div>
 
                     <div class="form-group col-md-6">
                         <label>Status</label>
                         <input type="text" name="text2" class="form-control"
-                               placeholder="status">
+                               placeholder="status" value="<?php echo $stat?>">
                     </div>
                 </div>
             </form>

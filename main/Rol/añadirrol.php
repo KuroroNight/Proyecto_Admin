@@ -1,20 +1,26 @@
 <?php
 require_once '../../config/global.php';
 require '../../config/db.php';
-//config db
-/*
-$id_usuario = $_SESSION['id_usuario'];
-$sql = "select * from hardware where id = '$id_usuario'";
-$resultado = mysqli_query($db, $sql);
+
+$id = '';
+$name = '';
+$stat = '';
+
+if (!empty($_GET['id'])) {
+    $id = $_GET['id'];
+    $sql = "select * from roles where id_rol = $id";
+    $resultado = mysqli_query($db, $sql);
 
 
-if($resultado){
-    while ($fila = mysqli_fetch_assoc($resultado)){
+    if ($resultado) {
+        $fila = mysqli_fetch_assoc($resultado);
+        $name = $fila['nombre'];
+        $stat = $fila['status'];
 
     }
 }
 
-*/
+
 
 define('RUTA_INCLUDE', '../../'); //ajustar a necesidad
 ?>
@@ -56,7 +62,7 @@ define('RUTA_INCLUDE', '../../'); //ajustar a necesidad
 
             <!-- Page Content -->
             <form action="add-rol.php" method="post" enctype="multipart/form-data">
-                <!-- <input type="hidden" name="id_estado" value="<//?php echo $id_estado ?>" />-->
+                <input type="hidden" name="id" value="<?php echo $id ?>" />
                 <div class="row mb-5">
                     <div class="col">
                         <button type="submit" class="btn btn-success" >Añadir</button>
@@ -71,20 +77,14 @@ define('RUTA_INCLUDE', '../../'); //ajustar a necesidad
                     <div class="form-group col-md-6">
                         <label>Nombre del rol</label>
                         <input type="text" name="nombre" class="form-control"
-                               placeholder="Nombre">
+                               placeholder="Nombre" value="<?php echo $name ?>">
                     </div>
 
-
-                    <div class="form-group col-md-6">
-                        <label>Numero de rol</label>
-                        <input type="number" name="num_rol" class="form-control"
-                               placeholder="num rol">
-                    </div>
 
                     <div class="form-group col-md-6">
                         <label>Status</label>
                         <input type="text" name="stat" class="form-control"
-                               placeholder="Status">
+                               placeholder="Status" value="<?php echo $stat ?>">
                     </div>
                 </div>
             </form>

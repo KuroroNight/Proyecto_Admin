@@ -103,7 +103,7 @@ define('RUTA_INCLUDE', '../../'); //ajustar a necesidad
                                         echo "Normal";
                                     }?></td>
                                 <td><?php echo $p['status'] ?></td>
-                                <td><a href=".php?id=<?php echo $p['id_usuario'] ?>""
+                                <td><a href="añadirUsuario.php?id=<?php echo $p['id_usuario'] ?>""
                                     class="btn btn-link btn-sm">Editar</a> <a
                                         href="borraruser.php?id=<?php echo $p['id_usuario'] ?>"
                                         class="btn btn-link btn-sm">Eliminar</a></td>

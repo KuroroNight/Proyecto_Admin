@@ -47,8 +47,8 @@ define('RUTA_INCLUDE', '../../'); //ajustar a necesidad
             <!-- Page Content -->
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
-                    <li class="breadcrumb-item">Hardware</li>
-                    <li class="breadcrumb-item active" aria-current="page">Dispositivos </li>
+                    <li class="breadcrumb-item">Rol</li>
+                    <li class="breadcrumb-item active" aria-current="page">Roles </li>
                 </ol>
             </nav>
 
@@ -61,7 +61,7 @@ define('RUTA_INCLUDE', '../../'); //ajustar a necesidad
             <!-- DataTales Example -->
             <div class="card shadow mb-4">
                 <div class="card-header py-3">
-                    <h6 class="m-0 font-weight-bold text-primary">Tabla con los hardware</h6>
+                    <h6 class="m-0 font-weight-bold text-primary">Tabla con los roles</h6>
                 </div>
                 <?php
                 if (count($rol) > 0){
@@ -94,7 +94,7 @@ define('RUTA_INCLUDE', '../../'); //ajustar a necesidad
                                 <td><?php echo ++$contador ?></td>
                                 <td><?php echo $p['nombre'] ?></td>
                                 <td><?php echo $p['status'] ?></td>
-                                <td><a href=".php?id=<?php echo $id ?>""
+                                <td><a href="añadirrol.php?id=<?php echo $id ?>""
                                     class="btn btn-link btn-sm">Editar</a> <a
                                         href="deleterol.php?id=<?php echo $id ?>"
                                         class="btn btn-link btn-sm">Eliminar</a></td>

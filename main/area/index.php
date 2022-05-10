@@ -11,8 +11,6 @@ if ($resultado) {
 }
 
 
-
-
 define('RUTA_INCLUDE', '../../'); //ajustar a necesidad
 ?>
 <!DOCTYPE html>
@@ -97,7 +95,7 @@ define('RUTA_INCLUDE', '../../'); //ajustar a necesidad
                                 <td><?php echo $p['nombre'] ?></td>
                                 <td><?php echo $p['ubicacion'] ?></td>
                                 <td><?php echo $p['status'] ?></td>
-                                <td><a href=".php?id=<?php echo $id ?>""
+                                <td><a href="añdirnuevo.php?id=<?php echo $id ?>""
                                     class="btn btn-link btn-sm">Editar</a> <a
                                         href="delete-area.php?id=<?php echo $id ?>"
                                         class="btn btn-link btn-sm">Eliminar</a></td>
