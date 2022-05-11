@@ -14,10 +14,10 @@ $Departamento = $_POST['dept'];
 
 
 if (empty($id)){
-    $query = "insert into empleados(nombre,cargo,email,telefono,usuario,departamento)
-values ('$Nombre','$Cargo','$Email',$Telefono, $Usuario, '$Departamento')";
+    $query = "insert into empleados(nombre,cargo,email,telefono,usuario,departamento, ultima_modificacion)
+values ('$Nombre','$Cargo','$Email',$Telefono, $Usuario, '$Departamento',NOW())";
 }else{
-    $query = "update empleados set nombre = '$Nombre', cargo = '$Cargo', email = '$Email' , telefono = $Telefono, usuario = $Usuario,departamento = '$Departamento'
+    $query = "update empleados set nombre = '$Nombre', cargo = '$Cargo', email = '$Email' , telefono = $Telefono, usuario = $Usuario, departamento = '$Departamento', ultima_modificacion = NOW()
     where id_empleado = $id";
 }
 mysqli_report(MYSQLI_REPORT_ERROR);
