@@ -21,7 +21,7 @@ if($resultado != false){
         if(password_verify($pass,$pass_en_bd)) {
 
             $id_user = $fila['id_usuario'];
-            $id_em= $fila['id_usuario'];
+            $id_em = $fila['id_usuario'];
             $nombre_user = $fila['nombre'];
 
             $_SESSION['id_user'] = $id_user;

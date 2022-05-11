@@ -9,7 +9,7 @@ $ubicacion = $_POST['Ubi'];
 $status = $_POST['text2'];
 
 if (empty($id)){
-    $query = "insert into area(nombre,ubicacion,status)values ('$Nombre','$ubicacion','$status')";
+    $query = "insert into area(nombre,ubicacion,status, ultima_modificacion)values ('$Nombre','$ubicacion','$status', NOW())";
 }else{
     $query = "update area set nombre = '$Nombre', ubicacion = '$ubicacion' ,status = '$status',ultima_modificacion = NOW() where id_area = $id";
 }

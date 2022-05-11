@@ -5,7 +5,7 @@
       <driver-ref>mariadb</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.mariadb.jdbc.Driver</jdbc-driver>
-      <jdbc-url>jdbc:mariadb://administrandoando:3306/Prueba</jdbc-url>
+      <jdbc-url>jdbc:mariadb://administrandoando.me:3306/Prueba</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
   </component>

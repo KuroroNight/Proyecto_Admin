@@ -5,7 +5,7 @@ session_start();
 
 //Verifica si la sesión del usuario fue cerrada
 if(isset($_SESSION['id_user'])){
-    $id_user=$_SESSION['id_usuario'];
+    $id_user=$_SESSION['id_user'];
     $nombre_user=$_SESSION['nombre_user'];
     $nombre_usuario=$_SESSION['nombre_empleado'];
 
